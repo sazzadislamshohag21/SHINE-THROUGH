@@ -10,8 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="collections.css" />
-    <script type="module" src="app.js"></script>
-    <link rel="icon" type="image/png" href="asseats/favicon.png?v=option-b-2">
+    <script defer src="app.bundle.js"></script>
+    <link rel="icon" type="image/png" href="asseats/favicon.png?v=option-b">
   </head>
   <body class="collections-page">
     <a class="skip-link" href="#main">Skip to content</a>
@@ -139,7 +139,7 @@
 
     <footer class="site-footer" id="footer">
       <div class="footer-main section-shell">
-        <div class="footer-brand-block"><a class="brand footer-brand" href="index.html"><img class="brand-logo" src="asseats/shine-through-logo.svg" alt="SHINE THROUGH" width="1039" height="607"></a><p>Thoughtful lighting for rooms that feel like you.</p></div>
+        <div class="footer-brand-block"><a class="brand footer-brand" href="index.html"><img class="brand-logo" src="asseats/shine-through-logo.svg" alt="SHINE THROUGH" width="1039" height="607"></a><p>Thoughtful lighting for rooms that feel like you.</p><!-- STORE_CONTACT_START --><div class="store-contact-links"><a href="https://www.facebook.com/shinethrough26/" target="_blank" rel="noopener noreferrer">Contact on Facebook ↗</a></div><!-- STORE_CONTACT_END --></div>
         <div class="footer-links">
           <div><p class="footer-label">Explore</p><a href="invest.html">Invest with us ↗</a><a href="shop.html">Shop all</a><a href="shop.html?category=Floor+lamps#shop">Floor lamps</a><a href="collections.html" aria-current="page">Collections</a></div>
           <div><p class="footer-label">Discover</p><a href="approach.html">Our approach</a><a href="journal.html">Journal</a></div>
@@ -155,7 +155,7 @@
         <div class="cart-panel-header"><div><p class="eyebrow">Your edit</p><h2 id="cart-title">Shopping bag</h2></div><button class="icon-button close-button" type="button" data-close-cart aria-label="Close shopping bag">×</button></div>
         <div class="cart-items" data-cart-items></div>
         <div class="cart-empty" data-cart-empty><span class="empty-symbol" aria-hidden="true">✳</span><h3>Your bag is quiet.</h3><p>Find a light that makes you want to stay awhile.</p><a class="button button-dark" href="#shop" data-close-cart>Explore the edit</a></div>
-        <div class="cart-summary is-hidden" data-cart-summary><div class="summary-row"><span>Subtotal</span><strong data-cart-subtotal>৳ 0</strong></div><p>Shipping and taxes are calculated at checkout.</p><button class="button button-dark button-full" type="button" data-demo-checkout>Continue to checkout <span aria-hidden="true">↗</span></button><button class="continue-shopping" type="button" data-close-cart>Continue shopping</button></div>
+        <div class="cart-summary is-hidden" data-cart-summary><div class="summary-row"><span>Subtotal</span><strong data-cart-subtotal>৳ 0</strong></div><p class="order-summary-note">Order by Facebook. Our team will confirm availability, delivery, and payment details.</p><button class="button button-dark button-full" type="button" data-start-order>Send order enquiry <span aria-hidden="true">↗</span></button><button class="continue-shopping" type="button" data-close-cart>Continue shopping</button></div>
       </aside>
     </div>
     <div class="toast" data-toast role="status" aria-live="polite"></div>

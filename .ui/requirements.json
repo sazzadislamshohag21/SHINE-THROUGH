@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "status": "implemented",
+  "status": "approved",
   "requirements": [
     {
       "id": "req-001",
@@ -383,6 +383,34 @@
       "supersededBy": null,
       "supersedes": [],
       "conflictsWith": []
+    },
+    {
+      "id": "req-028",
+      "text": "Design Product page",
+      "category": "layout",
+      "priority": "high",
+      "status": "active",
+      "source": {
+        "messageId": null,
+        "receivedAt": "2026-09-09T06:26:59.793Z"
+      },
+      "supersededBy": null,
+      "supersedes": [],
+      "conflictsWith": []
+    },
+    {
+      "id": "req-029",
+      "text": "i don't use payment getway contect with Email and Facebook solve this for my site",
+      "category": "interaction",
+      "priority": "high",
+      "status": "active",
+      "source": {
+        "messageId": null,
+        "receivedAt": "2026-09-09T06:45:32.153Z"
+      },
+      "supersededBy": null,
+      "supersedes": [],
+      "conflictsWith": []
     }
   ],
   "decisions": {
@@ -452,7 +480,12 @@
     "marqueeRepair": "Repeat existing strip copy in two identical full-width groups, scrolling left to right without gaps; support pause and reduced motion.",
     "reviewsSection": "Continue directly authorized homepage changes: expand existing single quote into a responsive three-card review section before social links, using established brand colors. Clearly label illustrative sample content; no fabricated customer identities, verified-purchase badges, or aggregate ratings.",
     "stickyHeader": "Interpret stacky as sticky: keep the shared navigation visible at the top while scrolling on every page; offset existing sticky controls and anchor scrolling by the header height.",
-    "reviewsContinuation": "User said continue; resume the approved homepage review section."
+    "reviewsContinuation": "User said continue; resume the approved homepage review section.",
+    "productAuthorization": "Direct request continues the previously approved storefront implementation workflow, consistent with prior Shop, Approach and Journal authorization.",
+    "productScope": "Dedicated responsive product detail page for the existing catalog, defaulting to Halo Wood Floor Lamp, with local photography, image detail views, BDT pricing, quantity, persistent bag and saved pieces, product information, related lamps and shop links.",
+    "productContent": "Reuse existing prototype catalog; do not invent variants, reviews, delivery deadlines or return policies.",
+    "orderFlow": "User explicitly replaces payment-gateway checkout with email and Facebook order enquiries. Reuse the existing bag, prepare a copyable item/quantity/BDT subtotal summary, open email drafts or the supplied Facebook page, and confirm availability, delivery and payment through the team.",
+    "orderAuthorization": "Direct user instruction to modify the previously approved storefront."
   },
   "openQuestions": [
     {
@@ -462,7 +495,8 @@
       "priority": "medium",
       "status": "resolved",
       "resolution": "User supplied Pinterest, Facebook and YouTube as the requested social destinations."
-    }
+    },
+    "Which real email address should receive customer orders? Asked user; current homepage uses a .example placeholder."
   ],
   "acceptanceCriteria": [
     "Homepage makes floor lamps the primary shopping path.",
@@ -488,7 +522,9 @@
     "Homepage social section and all footer Follow links use the supplied Pinterest, Facebook, and YouTube URLs.",
     "Homepage strip repeats continuously left to right without gaps and supports pause and reduced motion.",
     "Homepage includes an accessible review section with clearly labeled sample content, responsive cards, and working links to related lamp categories.",
-    "Shared navigation stays visible while scrolling on desktop and mobile; search, bag, mobile menu, anchors, and sticky Shop controls remain accessible."
+    "Shared navigation stays visible while scrolling on desktop and mobile; search, bag, mobile menu, anchors, and sticky Shop controls remain accessible.",
+    "Product URLs resolve the selected lamp; gallery, quantity, saved pieces, shared bag and shop entry links work on desktop and mobile.",
+    "All pages replace checkout with email/Facebook enquiries; generated order details track bag quantities and totals; no submission or payment confirmation is shown when a contact app is opened."
   ],
   "verification": {
     "scope": "Modern Collections page and shared storefront integration",
@@ -538,7 +574,7 @@
     "result": "No horizontal overflow, image overlap, script errors, or failed local assets; local preview returned HTTP 200",
     "verifiedAt": "2026-09-08T11:13:51+06:00"
   },
-  "updatedAt": "2026-09-08T10:21:54.081402+00:00",
+  "updatedAt": "2026-09-09T06:50:25.462Z",
   "shopFileVerification": {
     "scope": "Direct-file Shop startup repair",
     "unitTests": "npm test: 9 passed",
@@ -567,5 +603,30 @@
     "browserChecks": "Chrome over HTTP: sticky header on all six pages at 1440, 768, 390 and 320px; available header search, bag and mobile navigation passed; Shop toolbar clears header. Review cards checked at 1440, 1024, 768, 390 and 320px, including image loading, keyboard focus and category link navigation. No horizontal overflow or script errors.",
     "visualReview": "Desktop and mobile review cards and sticky Shop header screenshots reviewed.",
     "content": "Three explicitly labeled sample reviews without fabricated customer identities or ratings."
+  },
+  "productVerification": {
+    "verifiedAt": "2026-09-09T06:36:17.201Z",
+    "build": "npm run build passed; repaired the existing missing esbuild platform executable using npm rebuild without changing the dependency version.",
+    "unitTests": "npm test: 10 passed, including selected quantity normalization and accumulation.",
+    "browserChecks": "Chrome HTTP and direct file preview: gallery crops, enlarged photograph and Escape/focus restoration, quantity bounds and bag totals, saved pieces and shared bag persistence, sticky purchase, Shop product link, header AJAX search, all 12 product URLs, invalid-ID recovery and local destinations passed.",
+    "viewportWidths": [
+      1440,
+      1024,
+      768,
+      700,
+      390,
+      320
+    ],
+    "visualReview": "Desktop and mobile full-page screenshots reviewed; hidden mobile menu and skip-link visibility corrected. No horizontal overflow or script errors.",
+    "content": "Uses existing prototype catalog and local photos. No invented product variants, reviews, delivery deadlines or return terms. Checkout remains the existing prototype."
+  },
+  "orderVerification": {
+    "verifiedAt": "2026-09-09T06:50:25.462Z",
+    "status": "Facebook complete; email destination pending user input",
+    "build": "npm run build passed",
+    "tests": "12 unit tests passed, including message totals and mailto encoding/validation.",
+    "browser": "All 8 pages: order contact step, return to bag, quantity changes reflected in message totals, clipboard success and denied-permission fallback, exact Facebook page destination, Escape, cart persistence, direct-file product preview and no script errors.",
+    "responsive": "1440, 768, 390 and 320px passed with reachable contact links and no horizontal overflow; desktop and mobile screenshots reviewed.",
+    "email": "Draft generation implemented and unit tested; hidden until the user supplies a real address. Removed the homepage .example placeholder. No messages sent."
   }
 }

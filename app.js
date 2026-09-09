@@ -1,4 +1,5 @@
 import { initAjaxSearch } from './search.js';
+import { contactPanelHTML, orderMessage, orderEmailURL } from './store-contact.js';
 
 export const PRODUCTS = [
   {
@@ -182,12 +183,13 @@ export function searchProducts(products, query = '') {
   });
 }
 
-export function addToCart(cart, productId) {
+export function addToCart(cart, productId, quantity = 1) {
+  const amount = Math.max(1, Math.min(99, Math.floor(Number(quantity) || 1))); 
   const existing = cart.find((item) => item.id === productId);
   if (existing) {
-    return cart.map((item) => (item.id === productId ? { ...item, quantity: item.quantity + 1 } : item));
+    return cart.map((item) => (item.id === productId ? { ...item, quantity: item.quantity + amount } : item));
   }
-  return [...cart, { id: productId, quantity: 1 }];
+  return [...cart, { id: productId, quantity: amount }];
 }
 
 export function updateCartQuantity(cart, productId, quantity) {
@@ -247,7 +249,7 @@ function productCard(product) {
   return `
     <article class="product-card">
       <div class="product-image-wrap">
-        <img class="product-image" src="${product.image}" alt="${product.imageAlt}" loading="lazy" />
+        <a href="product.html?id=${product.id}" aria-label="View ${product.name}"><img class="product-image" src="${product.image}" alt="${product.imageAlt}" loading="lazy" /></a>
         <span class="product-badge">${product.badge}</span>
         <button class="wishlist-button" type="button" aria-label="Save ${product.name}">${icon('heart')}</button>
         <button class="quick-add" type="button" data-add-to-cart="${product.id}">Add to bag ${icon('arrow')}</button>
@@ -255,7 +257,7 @@ function productCard(product) {
       <div class="product-info">
         <div>
           <p class="product-category">${product.category}</p>
-          <h3>${product.name}</h3>
+          <h3><a href="product.html?id=${product.id}">${product.name}</a></h3>
         </div>
         <div class="product-prices">
           <strong>${formatBDT(product.price)}</strong>
@@ -292,6 +294,13 @@ export function initStorefront({ customCatalog = false } = {}) {
   const closeCartButton = document.querySelector('[data-close-cart]');
   const searchToggle = document.querySelector('[data-search-toggle]');
   const closeSearchButton = document.querySelector('[data-close-search]');
+  cartSummary.insertAdjacentHTML('afterend', contactPanelHTML());
+  const orderPanel = cartDrawer.querySelector('[data-order-contact]');
+  const orderTextarea = cartDrawer.querySelector('[data-order-message]');
+  const orderEmail = cartDrawer.querySelector('[data-order-email]');
+  const orderStatus = cartDrawer.querySelector('[data-order-status]');
+  const orderStart = cartDrawer.querySelector('[data-start-order]');
+  let isOrderOpen = false;
   const productSort = document.querySelector('[data-product-sort]');
   const categoryTitle = document.querySelector('[data-category-title]');
   const isCollectionsPage = document.body.classList.contains('collections-page');
@@ -408,11 +417,32 @@ export function initStorefront({ customCatalog = false } = {}) {
         </section>`);
     }
     cartSubtotal.textContent = formatBDT(subtotal);
+    const message = orderMessage(cart, PRODUCTS);
+    orderTextarea.value = message;
+    const emailURL = orderEmailURL(message);
+    orderEmail.hidden = !emailURL;
+    if (emailURL) orderEmail.href = emailURL;
+    else orderEmail.removeAttribute('href');
+  };
+
+  const setOrderOpen = (open) => {
+    isOrderOpen = open;
+    orderPanel.hidden = !open;
+    cartDrawer.classList.toggle('is-contacting', open);
+    cartItems.hidden = open;
+    cartSummary.hidden = open;
+    cartDrawer.querySelector('#cart-title').textContent = open ? 'Send your selection' : 'Shopping bag';
+    if (open) {
+      orderStatus.textContent = '';
+      orderPanel.scrollTop = 0;
+      orderPanel.querySelector('[data-order-back]').focus();
+    } else orderStart?.focus();
   };
 
   const setCartOpen = (isOpen) => {
     if (cartDrawer.classList.contains('is-open') === isOpen) return;
     if (isOpen) lastFocusedElement = document.activeElement;
+    if (!isOpen && isOrderOpen) setOrderOpen(false);
     cartDrawer.classList.toggle('is-open', isOpen);
     cartDrawer.setAttribute('aria-hidden', String(!isOpen));
     cartDrawer.inert = !isOpen;
@@ -465,13 +495,14 @@ export function initStorefront({ customCatalog = false } = {}) {
 
     const addButton = event.target.closest('[data-add-to-cart]');
     if (addButton) {
-      cart = addToCart(cart, addButton.dataset.addToCart);
+      cart = addToCart(cart, addButton.dataset.addToCart, addButton.dataset.addQuantity);
       saveCart(cart);
       renderCart();
       if (addButton.hasAttribute('data-upsell-add')) {
         (cartItems.querySelector('[data-upsell-add]') || closeCartButton).focus({ preventScroll: true });
       }
       showToast('Added to your bag');
+      if (addButton.hasAttribute('data-open-bag')) setCartOpen(true);
       return;
     }
 
@@ -544,8 +575,24 @@ export function initStorefront({ customCatalog = false } = {}) {
     showToast('You are on the list');
   });
 
-  document.querySelector('[data-demo-checkout]')?.addEventListener('click', () => {
-    showToast('Checkout is ready for Shopify integration');
+  orderStart?.addEventListener('click', () => {
+    if (!orderMessage(cart, PRODUCTS)) return;
+    renderCart();
+    setOrderOpen(true);
+  });
+  orderPanel.querySelector('[data-order-back]').addEventListener('click', () => setOrderOpen(false));
+  orderPanel.querySelector('[data-copy-order]').addEventListener('click', async () => {
+    try {
+      await navigator.clipboard.writeText(orderTextarea.value);
+      orderStatus.textContent = 'Details copied. Open Facebook and paste them into a message to our team.';
+    } catch {
+      orderTextarea.focus();
+      orderTextarea.select();
+      orderStatus.textContent = 'Select and copy the highlighted details, then paste them into your message.';
+    }
+  });
+  orderEmail.addEventListener('click', () => {
+    orderStatus.textContent = 'Your email app will open a draft. Review it and send it to our team. You can also copy the details above.';
   });
 
   document.addEventListener('keydown', (event) => {
@@ -555,7 +602,7 @@ export function initStorefront({ customCatalog = false } = {}) {
       setMobileMenuOpen(false);
     }
     if (event.key === 'Tab' && cartDrawer.classList.contains('is-open')) {
-      const focusable = [...cartDrawer.querySelectorAll('button, a[href], input, select, [tabindex="0"]')]
+      const focusable = [...cartDrawer.querySelectorAll('button, a[href], input, select, textarea, [tabindex="0"]')]
         .filter((element) => !element.disabled && element.getClientRects().length > 0);
       const first = focusable[0];
       const last = focusable.at(-1);
@@ -583,7 +630,7 @@ export function initStorefront({ customCatalog = false } = {}) {
 
 if (typeof document !== 'undefined') {
   document.addEventListener('DOMContentLoaded', () => {
-    if (!document.body.classList.contains('shop-page')) {
+    if (!document.body.matches('.shop-page, .product-page')) {
       initStorefront({ customCatalog: !document.querySelector('[data-product-grid]') });
     }
   });

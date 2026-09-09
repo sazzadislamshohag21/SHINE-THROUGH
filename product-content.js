@@ -1,0 +1,41 @@
+import { PRODUCTS, formatBDT } from './app.js';
+import { ORDER_CHANNELS } from './store-contact.js';
+
+export const DEFAULT_PRODUCT_ID = 'halo-wood-floor-lamp';
+export const productURL = id => `product.html?id=${encodeURIComponent(id)}`;
+const arrow = '<span aria-hidden="true">↗</span>';
+const heart = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M20.8 8.8c0 5.2-8.8 10-8.8 10s-8.8-4.8-8.8-10A4.8 4.8 0 0 1 12 6.1a4.8 4.8 0 0 1 8.8 2.7Z"/></svg>';
+
+export function renderProductPage(product) {
+  if (!product) return '<section class="pd-missing section-shell"><p class="eyebrow">A different light awaits</p><h1>Piece not found.</h1><p>This product link is unavailable. Explore the shop to find your next light.</p><a class="button button-dark" href="shop.html">Explore all lighting ↗</a></section>';
+  const p = product;
+  const halo = p.id === DEFAULT_PRODUCT_ID;
+  const categoryURL = `shop.html?${new URLSearchParams({ category: p.category })}#shop`;
+  const title = p.name.replace(/(Floor Lamp|Table Lamp|Smart Lamp|Gooseneck Lamp|Statement Lamp|Pendant Light|Wall Light|Ceiling Light|Outdoor Light)$/, '<em>$1</em>');
+  const views = halo ? ['In the room', 'Shade detail', 'Base detail'] : ['In the room', 'A closer look'];
+  const related = PRODUCTS.filter(item => item.id !== p.id).sort((a,b) => Number(b.category === p.category) - Number(a.category === p.category)).slice(0,3);
+  return `
+    <nav class="pd-breadcrumbs section-shell" aria-label="Breadcrumb"><a href="index.html">Home</a><span>/</span><a href="${categoryURL}">${p.category}</a><span>/</span><span aria-current="page">${p.name}</span></nav>
+    <section class="pd-hero section-shell" aria-labelledby="product-title">
+      <div class="pd-gallery" data-gallery data-halo="${halo}">
+        <button class="pd-main-photo" type="button" data-open-image aria-label="Enlarge product photograph"><img src="${p.image}" alt="${p.imageAlt}" width="1122" height="1402" fetchpriority="high" data-main-image /><span class="pd-photo-tag">${p.badge}</span><span class="pd-expand" aria-hidden="true">↗</span></button>
+        <div class="pd-gallery-bottom"><div class="pd-thumbnails" role="group" aria-label="Product photograph views">${views.map((label,i)=>`<button type="button" class="pd-thumbnail" data-photo-view="${i}" aria-pressed="${i===0}" aria-label="${label}"><img src="${p.image}" alt="" width="66" height="76" /></button>`).join('')}</div><p><span data-view-caption aria-live="polite">${views[0]}</span><span class="pd-photo-count" data-photo-count>01 / 0${views.length}</span></p></div>
+      </div>
+      <div class="pd-copy">
+        <div class="pd-heading-top"><p class="eyebrow">The ${p.category.toLowerCase()} edit</p><button class="pd-save" type="button" data-save-piece aria-pressed="false" aria-label="Save ${p.name}">${heart}</button></div>
+        <h1 id="product-title">${title}</h1>
+        <div class="pd-price"><strong>${formatBDT(p.price)}</strong>${p.compareAt > p.price ? `<del>${formatBDT(p.compareAt)}</del><span>Save ${formatBDT(p.compareAt-p.price)}</span>` : ''}</div>
+        <p class="pd-description">${p.description}</p>
+        <div class="pd-finish"><span class="pd-small-label">Finish</span><div><span class="pd-swatch${halo?' pd-swatch-wood':''}" aria-hidden="true"></span><span>${p.tone}</span></div><a href="#product-details">See the details ${arrow}</a></div>
+        <div class="pd-purchase" data-purchase><label class="pd-small-label" for="product-quantity">Quantity</label><div class="pd-purchase-row"><div class="pd-quantity"><button type="button" data-quantity-step="-1" aria-label="Decrease quantity" disabled>−</button><input id="product-quantity" type="number" min="1" max="99" step="1" value="1" inputmode="numeric" /><button type="button" data-quantity-step="1" aria-label="Increase quantity">+</button></div><button class="button button-dark pd-add" type="button" data-add-to-cart="${p.id}" data-add-quantity="1" data-open-bag>Add to bag <span aria-hidden="true">↗</span></button></div></div>
+        <p class="pd-order-note">Add your favourites to the bag, then send your order enquiry by ${ORDER_CHANNELS}.</p>
+        <div class="pd-delivery"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true"><path d="M3 5h11v12H3zM14 10h4l3 4v3h-7M4 9h6"/><circle cx="7" cy="18" r="2"/><circle cx="18" cy="18" r="2"/></svg><p>Delivery across Bangladesh<span>Delivery charges confirmed when you enquire.</span></p></div>
+        <div class="pd-accordions" id="product-details"><details open><summary>Details that make the difference <span aria-hidden="true">+</span></summary><div><ul>${p.specs.map(spec=>`<li>${spec}</li>`).join('')}</ul><a class="text-link" href="approach.html#lighting-guide">Find your kind of light ${arrow}</a></div></details><details><summary>Delivery &amp; returns <span aria-hidden="true">+</span></summary><div><p>We deliver across Bangladesh. Contact our team to confirm delivery availability, charges, and the return terms for your order.</p><a class="text-link" href="https://www.facebook.com/shinethrough26/" target="_blank" rel="noopener noreferrer">Talk to SHINE THROUGH ${arrow}</a></div></details><details><summary>A little care goes a long way <span aria-hidden="true">+</span></summary><div><p>Switch off and unplug before cleaning. Use a soft, dry cloth and follow the care instructions supplied with your lamp.</p><p>Need help with bulb compatibility or setup? Our team can help you choose.</p></div></details></div>
+        <p class="pd-help">A little help choosing? <a href="https://www.facebook.com/shinethrough26/" target="_blank" rel="noopener noreferrer">Let’s talk ${arrow}</a></p>
+      </div>
+    </section>
+    <section class="pd-story section-shell" aria-labelledby="pd-story-title"><div class="pd-story-copy"><p class="eyebrow">More than a finishing touch</p><h2 id="pd-story-title">Your corner.<br />A whole new <em>feeling.</em></h2><p>A favourite spot, made a little more inviting. Let the light sit alongside the things you love, and give everyday moments a place to unfold.</p><a class="text-link" href="approach.html">The way we see light ${arrow}</a><div class="pd-story-signoff"><span aria-hidden="true">✳</span><span>Considered forms.<br />Everyday atmosphere.</span></div></div><figure class="pd-story-visual"><img src="${p.image}" alt="${p.imageAlt}" loading="lazy" width="1122" height="1402" /><figcaption><span>Room for a little glow.</span><span>SHINE THROUGH / ${p.category}</span></figcaption></figure></section>
+    <section class="pd-related section-shell" aria-labelledby="pd-related-title"><div class="pd-section-heading"><div><p class="eyebrow">Keep the feeling going</p><h2 id="pd-related-title">Meet your next <em>favourite.</em></h2></div><a class="text-link" href="${categoryURL}">Explore ${p.category.toLowerCase()} ${arrow}</a></div><div class="pd-related-grid">${related.map(item=>`<article class="pd-related-card"><a class="pd-related-photo" href="${productURL(item.id)}"><img src="${item.image}" alt="${item.imageAlt}" loading="lazy" width="540" height="650" /><span>${item.badge}</span><b aria-hidden="true">↗</b></a><p class="pd-small-label">${item.category}</p><h3><a href="${productURL(item.id)}">${item.name}</a></h3><div><span>${item.tone}</span><strong>${formatBDT(item.price)}</strong></div></article>`).join('')}</div></section>
+    <div class="pd-sticky" data-sticky-purchase hidden><div class="section-shell"><div><span>${p.name}</span><strong>${formatBDT(p.price)}</strong></div><button class="button button-dark" type="button" data-add-to-cart="${p.id}" data-add-quantity="1" data-open-bag>Add to bag <span aria-hidden="true">↗</span></button></div></div>
+    <dialog class="pd-lightbox" data-image-dialog aria-label="Enlarged product photograph"><button class="pd-lightbox-close" type="button" data-close-image aria-label="Close enlarged photograph">×</button><img src="${p.image}" alt="${p.imageAlt}" width="1122" height="1402" /></dialog>`;
+}

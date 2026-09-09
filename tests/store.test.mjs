@@ -57,3 +57,14 @@ test('cart helpers add products, update quantity, and calculate totals', () => {
   cart = updateCartQuantity(cart, secondProduct.id, 0);
   assert.equal(cart.length, 1);
 });
+
+test('product page quantity adds the selected amount and normalizes invalid quantities', () => {
+  const id = PRODUCTS[0].id;
+  const cart = addToCart([], id, 3);
+  assert.equal(cart[0].quantity, 3);
+  assert.equal(addToCart(cart, id, '2')[0].quantity, 5);
+  assert.equal(cart[0].quantity, 3);
+  for (const value of ['', 0, -3, 'invalid']) assert.equal(addToCart([], id, value)[0].quantity, 1);
+  assert.equal(addToCart([], id, 3.7)[0].quantity, 3);
+  assert.equal(addToCart([], id, 1000)[0].quantity, 99);
+});
