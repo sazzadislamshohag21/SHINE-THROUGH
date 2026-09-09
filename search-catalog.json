@@ -1,0 +1,200 @@
+[
+  {
+    "id": "arc-line-floor-lamp",
+    "name": "Arc Line Floor Lamp",
+    "category": "Floor lamps",
+    "price": 7850,
+    "compareAt": 9200,
+    "badge": "Best seller",
+    "tone": "Matte black steel",
+    "description": "A sculptural arc that brings warm, focused light to reading corners.",
+    "specs": [
+      "Matte black steel",
+      "Warm LED compatible",
+      "Height: 160 cm"
+    ],
+    "image": "asseats/737046296_122213207996860537_6242905900036558432_n.jpg",
+    "imageAlt": "Modern arc floor lamp beside a soft lounge chair"
+  },
+  {
+    "id": "halo-wood-floor-lamp",
+    "name": "Halo Wood Floor Lamp",
+    "category": "Floor lamps",
+    "price": 6490,
+    "compareAt": 7200,
+    "badge": "New",
+    "tone": "Oak & linen",
+    "description": "Soft linen diffusion and a warm oak base for slow evenings at home.",
+    "specs": [
+      "Natural oak",
+      "Linen shade",
+      "Height: 148 cm"
+    ],
+    "image": "asseats/735128642_122212889018860537_2160910607779040054_n.jpg",
+    "imageAlt": "Linen shade floor lamp with a warm wooden base"
+  },
+  {
+    "id": "corner-glow-smart-lamp",
+    "name": "Corner Glow Smart Lamp",
+    "category": "Floor lamps",
+    "price": 3890,
+    "compareAt": 4500,
+    "badge": "Mood light",
+    "tone": "RGB LED",
+    "description": "A slim corner silhouette with app-controlled color for living rooms and gaming spaces.",
+    "specs": [
+      "RGB LED",
+      "App + remote control",
+      "Height: 120 cm"
+    ],
+    "image": "asseats/737758793_122213205494860537_228969185351526514_n.jpg",
+    "imageAlt": "Slim contemporary lamp glowing in a modern interior"
+  },
+  {
+    "id": "readwell-gooseneck-lamp",
+    "name": "Readwell Gooseneck Lamp",
+    "category": "Floor lamps",
+    "price": 5290,
+    "badge": "Reading light",
+    "tone": "Warm white LED",
+    "description": "A flexible reading light that keeps the glow exactly where you need it.",
+    "specs": [
+      "Dimmable LED",
+      "Flexible neck",
+      "Touch control"
+    ],
+    "image": "asseats/736689213_122212891238860537_7583314156601231015_n.jpg",
+    "imageAlt": "Adjustable reading floor lamp in a calm living room"
+  },
+  {
+    "id": "fold-statement-lamp",
+    "name": "Fold Statement Lamp",
+    "category": "Floor lamps",
+    "price": 8970,
+    "compareAt": 10400,
+    "badge": "Statement piece",
+    "tone": "Powder-coated black",
+    "description": "An architectural profile designed to anchor a quiet, considered room.",
+    "specs": [
+      "Powder-coated steel",
+      "Adjustable shade",
+      "Height: 172 cm"
+    ],
+    "image": "asseats/737799923_122212889186860537_3260884086558380508_n.jpg",
+    "imageAlt": "Statement floor lamp creating a pool of light beside a sofa"
+  },
+  {
+    "id": "linen-column-floor-lamp",
+    "name": "Linen Column Floor Lamp",
+    "category": "Floor lamps",
+    "price": 7150,
+    "badge": "Soft glow",
+    "tone": "Stone linen",
+    "description": "A tall, tonal shade for ambient light that feels easy from morning to night.",
+    "specs": [
+      "Stone linen",
+      "Metal frame",
+      "Height: 155 cm"
+    ],
+    "image": "asseats/738416469_122212889066860537_8142852148466883771_n.jpg",
+    "imageAlt": "Tall linen floor lamp in a neutral interior"
+  },
+  {
+    "id": "orbit-table-lamp",
+    "name": "Orbit Table Lamp",
+    "category": "Table lamps",
+    "price": 2950,
+    "compareAt": 3400,
+    "badge": "New",
+    "tone": "Stone ceramic",
+    "description": "A compact ceramic glow for bedside tables, consoles, and small shelves.",
+    "specs": [
+      "Stone ceramic",
+      "Cotton shade",
+      "Height: 34 cm"
+    ],
+    "image": "asseats/734783816_122212891154860537_895055113354639031_n.jpg",
+    "imageAlt": "Small ceramic table lamp on a wooden side table"
+  },
+  {
+    "id": "linea-pendant-light",
+    "name": "Linea Pendant Light",
+    "category": "Pendant lights",
+    "price": 4650,
+    "badge": "Quiet icon",
+    "tone": "Matte black",
+    "description": "A simple pendant with a graphic profile for dining tables and kitchen islands.",
+    "specs": [
+      "Matte black metal",
+      "Adjustable cord",
+      "Warm LED compatible"
+    ],
+    "image": "asseats/735993902_122212891358860537_4363195970911617746_n.jpg",
+    "imageAlt": "Minimal pendant light above a modern workspace"
+  },
+  {
+    "id": "soft-curve-wall-light",
+    "name": "Soft Curve Wall Light",
+    "category": "Wall lights",
+    "price": 3150,
+    "badge": "Easy install",
+    "tone": "Brushed brass",
+    "description": "A compact wall light that turns hallways and bedside corners into warm pauses.",
+    "specs": [
+      "Brushed brass",
+      "Wall mount",
+      "Warm LED compatible"
+    ],
+    "image": "asseats/736921464_122212891028860537_6244703595858073197_n.jpg",
+    "imageAlt": "Wall light casting warm light across a neutral wall"
+  },
+  {
+    "id": "cloud-ceiling-light",
+    "name": "Cloud Ceiling Light",
+    "category": "Ceiling lights",
+    "price": 5850,
+    "compareAt": 6500,
+    "badge": "Best seller",
+    "tone": "Opal glass",
+    "description": "A softly rounded ceiling light that spreads an even, comfortable glow.",
+    "specs": [
+      "Opal glass",
+      "Brushed steel",
+      "Dimmable"
+    ],
+    "image": "asseats/735858901_122212891322860537_5695129336991327583_n.jpg",
+    "imageAlt": "Soft ceiling light illuminating a calm bedroom"
+  },
+  {
+    "id": "garden-glow-outdoor-light",
+    "name": "Garden Glow Outdoor Light",
+    "category": "Outdoor lighting",
+    "price": 2780,
+    "badge": "Weather ready",
+    "tone": "Graphite aluminium",
+    "description": "A low, durable light for balconies, patios, and late dinners outside.",
+    "specs": [
+      "Graphite aluminium",
+      "IP44 rated",
+      "Warm LED compatible"
+    ],
+    "image": "asseats/735415734_122212889354860537_8453352915285784402_n.jpg",
+    "imageAlt": "Outdoor light glowing on a modern patio at dusk"
+  },
+  {
+    "id": "melt-glass-table-lamp",
+    "name": "Melt Glass Table Lamp",
+    "category": "Table lamps",
+    "price": 4250,
+    "badge": "New",
+    "tone": "Smoke glass",
+    "description": "A translucent glass form that makes a desk, console, or bedside glow feel special.",
+    "specs": [
+      "Smoke glass",
+      "Brushed metal base",
+      "Height: 38 cm"
+    ],
+    "image": "asseats/745503670_122215520828860537_4771775924143394858_n.jpg",
+    "imageAlt": "Glass table lamp with a warm bulb on a sideboard"
+  }
+]

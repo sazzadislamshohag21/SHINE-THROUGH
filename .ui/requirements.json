@@ -1,0 +1,571 @@
+{
+  "version": 1,
+  "status": "implemented",
+  "requirements": [
+    {
+      "id": "req-001",
+      "text": "I want to sell all categories of lamps, mainly focusing on floor lamps.",
+      "category": "goal",
+      "priority": "high",
+      "status": "active",
+      "source": {
+        "messageId": null,
+        "receivedAt": "2026-09-08T00:00:00+06:00"
+      },
+      "supersededBy": null,
+      "supersedes": [],
+      "conflictsWith": []
+    },
+    {
+      "id": "req-002",
+      "text": "Use the provided Shopify storefront as a visual reference: https://lapim-store-demo.myshopify.com/.",
+      "category": "visual",
+      "priority": "medium",
+      "status": "active",
+      "source": {
+        "messageId": null,
+        "receivedAt": "2026-09-08T00:00:00+06:00"
+      },
+      "supersededBy": null,
+      "supersedes": [],
+      "conflictsWith": []
+    },
+    {
+      "id": "req-003",
+      "text": "Build a working storefront prototype in the current workspace.",
+      "category": "technical",
+      "priority": "high",
+      "status": "active",
+      "source": {
+        "messageId": null,
+        "receivedAt": "2026-09-08T00:15:00+06:00"
+      },
+      "supersededBy": null,
+      "supersedes": [],
+      "conflictsWith": []
+    },
+    {
+      "id": "req-004",
+      "text": "Use a minimal modern visual style with white, stone, and matte-black tones.",
+      "category": "visual",
+      "priority": "high",
+      "status": "active",
+      "source": {
+        "messageId": null,
+        "receivedAt": "2026-09-08T00:20:00+06:00"
+      },
+      "supersededBy": null,
+      "supersedes": [],
+      "conflictsWith": []
+    },
+    {
+      "id": "req-005",
+      "text": "Use SHINE THROUGH as the store brand name in the prototype.",
+      "category": "content",
+      "priority": "high",
+      "status": "active",
+      "source": {
+        "messageId": null,
+        "receivedAt": "2026-09-08T00:25:00+06:00"
+      },
+      "supersededBy": null,
+      "supersedes": [],
+      "conflictsWith": []
+    },
+    {
+      "id": "req-006",
+      "text": "Display product prices in BDT.",
+      "category": "content",
+      "priority": "high",
+      "status": "active",
+      "source": {
+        "messageId": null,
+        "receivedAt": "2026-09-08T00:30:00+06:00"
+      },
+      "supersededBy": null,
+      "supersedes": [],
+      "conflictsWith": []
+    },
+    {
+      "id": "req-007",
+      "text": "Use images from the local asseats folder for the storefront prototype.",
+      "category": "content",
+      "priority": "high",
+      "status": "active",
+      "source": {
+        "messageId": null,
+        "receivedAt": "2026-09-08T01:15:00+06:00"
+      },
+      "supersededBy": null,
+      "supersedes": [],
+      "conflictsWith": []
+    },
+    {
+      "id": "req-008",
+      "text": "Create a different page that follows the SHINE THROUGH brand style and color direction shown in the attached navigation reference.",
+      "category": "layout",
+      "priority": "high",
+      "status": "active",
+      "source": {
+        "messageId": null,
+        "receivedAt": "2026-09-08T04:30:00+06:00"
+      },
+      "supersededBy": null,
+      "supersedes": [],
+      "conflictsWith": []
+    },
+    {
+      "id": "req-009",
+      "text": "Use the Facebook profile https://www.facebook.com/profile.php?id=61594102446497 as an additional brand/product reference.",
+      "category": "visual",
+      "priority": "medium",
+      "status": "active",
+      "source": {
+        "messageId": null,
+        "receivedAt": "2026-09-08T04:45:00+06:00"
+      },
+      "supersededBy": null,
+      "supersedes": [],
+      "conflictsWith": []
+    },
+    {
+      "id": "req-010",
+      "text": "Make the footer Follow links functional, using the supplied Facebook profile URL as the Facebook destination and following the attached Follow-section reference.",
+      "category": "interaction",
+      "priority": "medium",
+      "status": "superseded",
+      "source": {
+        "messageId": null,
+        "receivedAt": "2026-09-08T04:55:00+06:00"
+      },
+      "supersededBy": "req-023",
+      "supersedes": [],
+      "conflictsWith": []
+    },
+    {
+      "id": "req-011",
+      "text": "Create a product detail page that follows the SHINE THROUGH brand style and uses the local lamp imagery.",
+      "category": "layout",
+      "priority": "high",
+      "status": "superseded",
+      "source": {
+        "messageId": null,
+        "receivedAt": "2026-09-08T05:05:00+06:00"
+      },
+      "supersededBy": "req-012",
+      "supersedes": [],
+      "conflictsWith": []
+    },
+    {
+      "id": "req-012",
+      "text": "Create a modern Collections page that follows the SHINE THROUGH brand style and uses the local lamp imagery.",
+      "category": "layout",
+      "priority": "high",
+      "status": "active",
+      "source": {
+        "messageId": null,
+        "receivedAt": "2026-09-08T05:15:00+06:00"
+      },
+      "supersededBy": null,
+      "supersedes": [
+        "req-011"
+      ],
+      "conflictsWith": []
+    },
+    {
+      "id": "req-013",
+      "text": "approve",
+      "category": "acceptance",
+      "priority": "high",
+      "status": "active",
+      "source": {
+        "messageId": null,
+        "receivedAt": "2026-09-08T10:18:05+06:00"
+      },
+      "supersededBy": null,
+      "supersedes": [],
+      "conflictsWith": []
+    },
+    {
+      "id": "req-014",
+      "text": "shop page design with Modern Composition and make it more UX frindly use modern UI trandy 2026",
+      "category": "layout",
+      "priority": "high",
+      "status": "active",
+      "source": {
+        "messageId": null,
+        "receivedAt": "2026-09-08T10:36:06+06:00"
+      },
+      "supersededBy": null,
+      "supersedes": [],
+      "conflictsWith": []
+    },
+    {
+      "id": "req-015",
+      "text": "Design this Our approach page",
+      "category": "layout",
+      "priority": "high",
+      "status": "active",
+      "source": {
+        "messageId": null,
+        "receivedAt": "2026-09-08T10:59:51+06:00"
+      },
+      "supersededBy": null,
+      "supersedes": [],
+      "conflictsWith": []
+    },
+    {
+      "id": "req-016",
+      "text": "Journal Design this page",
+      "category": "layout",
+      "priority": "high",
+      "status": "active",
+      "source": {
+        "messageId": null,
+        "receivedAt": "2026-09-08T11:44:00+06:00"
+      },
+      "supersededBy": null,
+      "supersedes": [],
+      "conflictsWith": []
+    },
+    {
+      "id": "req-017",
+      "text": "[Image #1] fix this Loop left to right",
+      "category": "interaction",
+      "priority": "high",
+      "status": "active",
+      "source": {
+        "messageId": null,
+        "receivedAt": "2026-09-08T12:37:27+06:00"
+      },
+      "supersededBy": null,
+      "supersedes": [],
+      "conflictsWith": []
+    },
+    {
+      "id": "req-018",
+      "text": "use ajex in secarh",
+      "category": "interaction",
+      "priority": "high",
+      "status": "active",
+      "source": {
+        "messageId": null,
+        "receivedAt": "2026-09-08T12:38:00+06:00"
+      },
+      "supersededBy": null,
+      "supersedes": [],
+      "conflictsWith": []
+    },
+    {
+      "id": "req-019",
+      "text": "http://127.0.0.1:5502/approach.html in this page add a size guid section",
+      "category": "content",
+      "priority": "high",
+      "status": "active",
+      "source": {
+        "messageId": null,
+        "receivedAt": "2026-09-08T12:41:00+06:00"
+      },
+      "supersededBy": null,
+      "supersedes": [],
+      "conflictsWith": []
+    },
+    {
+      "id": "req-020",
+      "text": "file:///Users/stackifya/Documents/SHINE%20THROUGH/shop.html fixed this",
+      "category": "technical",
+      "priority": "high",
+      "status": "active",
+      "source": {
+        "messageId": null,
+        "receivedAt": "2026-09-08T09:51:43.564560+00:00"
+      },
+      "supersededBy": null,
+      "supersedes": [],
+      "conflictsWith": []
+    },
+    {
+      "id": "req-021",
+      "text": "[Image #1] use ajaxe in search [Image #2] removed this",
+      "category": "interaction",
+      "priority": "high",
+      "status": "active",
+      "source": {
+        "messageId": null,
+        "receivedAt": "2026-09-08T09:55:31.989515+00:00"
+      },
+      "supersededBy": null,
+      "supersedes": [],
+      "conflictsWith": []
+    },
+    {
+      "id": "req-022",
+      "text": "[Image #1] use ajaxe in search [Image #2] removed this",
+      "category": "visual",
+      "priority": "high",
+      "status": "active",
+      "source": {
+        "messageId": null,
+        "receivedAt": "2026-09-08T09:55:31.989515+00:00"
+      },
+      "supersededBy": null,
+      "supersedes": [],
+      "conflictsWith": []
+    },
+    {
+      "id": "req-023",
+      "text": "Pin terest link:https://www.pinterest.com/Shainthrough/  Facebook:https://www.facebook.com/shinethrough26/ Youtybe:https://www.youtube.com/@Shainthrough Use this link and Add Home A Social media Section",
+      "category": "content",
+      "priority": "high",
+      "status": "active",
+      "source": {
+        "messageId": null,
+        "receivedAt": "2026-09-08T10:02:25.399461+00:00"
+      },
+      "supersededBy": null,
+      "supersedes": [
+        "req-010"
+      ],
+      "conflictsWith": []
+    },
+    {
+      "id": "req-024",
+      "text": "Pin terest link:https://www.pinterest.com/Shainthrough/  Facebook:https://www.facebook.com/shinethrough26/ Youtybe:https://www.youtube.com/@Shainthrough Use this link and Add Home A Social media Section",
+      "category": "layout",
+      "priority": "high",
+      "status": "active",
+      "source": {
+        "messageId": null,
+        "receivedAt": "2026-09-08T10:02:25.399461+00:00"
+      },
+      "supersededBy": null,
+      "supersedes": [],
+      "conflictsWith": []
+    },
+    {
+      "id": "req-025",
+      "text": "[Image #1] loop offer left to right",
+      "category": "interaction",
+      "priority": "high",
+      "status": "active",
+      "source": {
+        "messageId": null,
+        "receivedAt": "2026-09-08T10:02:25.399461+00:00"
+      },
+      "supersededBy": null,
+      "supersedes": [],
+      "conflictsWith": []
+    },
+    {
+      "id": "req-026",
+      "text": "add Review section",
+      "category": "layout",
+      "priority": "high",
+      "status": "active",
+      "source": {
+        "messageId": null,
+        "receivedAt": "2026-09-08T10:14:02.721720+00:00"
+      },
+      "supersededBy": null,
+      "supersedes": [],
+      "conflictsWith": []
+    },
+    {
+      "id": "req-027",
+      "text": "[Image #1] make this stacky",
+      "category": "interaction",
+      "priority": "high",
+      "status": "active",
+      "source": {
+        "messageId": null,
+        "receivedAt": "2026-09-08T10:18:27.035160+00:00"
+      },
+      "supersededBy": null,
+      "supersedes": [],
+      "conflictsWith": []
+    }
+  ],
+  "decisions": {
+    "delivery": "working storefront prototype in the current workspace",
+    "visualStyle": "minimal modern: white, stone, and matte-black tones",
+    "brandName": "SHINE THROUGH",
+    "currency": "BDT",
+    "assetSource": "local asseats folder",
+    "brandReference": "Attached navigation screenshot: Shop, Collections, Our approach, Journal",
+    "facebookReference": "https://www.facebook.com/profile.php?id=61594102446497",
+    "footerReference": "Attached Follow screenshot: Instagram, Facebook, Pinterest links",
+    "secondaryPage": "Modern Collections page",
+    "collectionsScope": "All six lamp categories, with floor lamps featured first",
+    "collectionsApproval": "User said approve in response to the proposed modern Collections page and floor-lamps-first scope",
+    "collectionsImagery": "Local floor and table lamp photography, with decorative category illustrations for pendant, wall, ceiling, and outdoor lighting",
+    "socialLinks": {
+      "Pinterest": "https://www.pinterest.com/Shainthrough/",
+      "Facebook": "https://www.facebook.com/shinethrough26/",
+      "YouTube": "https://www.youtube.com/@Shainthrough"
+    },
+    "shopScope": "A dedicated modern Shop page using the established brand and local lamp imagery, with all products and floor lamps leading the featured order",
+    "shopAuthorization": "Implement the user's direct request within the previously approved storefront workflow; no additional approval cycle is needed",
+    "shopVisualDirection": "Contemporary editorial commerce: oversized paired sans/serif type, warm stone surfaces, compact composition, large local product photography, and restrained lime accents",
+    "shopUXReference": "https://baymard.com/blog/how-to-design-applied-filters",
+    "shopCatalog": "Uses the existing prototype catalog and BDT prices; catalog data and checkout remain demo content",
+    "approachScope": "Create a dedicated editorial Our Approach page in the established SHINE THROUGH brand style using local lamp photography",
+    "approachAuthorization": "The user's direct request continues the approved storefront implementation workflow",
+    "approachContinuation": "User said continue while navigation integration and verification were in progress",
+    "journalScope": "A modern editorial Journal landing page and companion article reader with six original sample stories, using existing brand tokens and local imagery",
+    "journalAuthorization": "Continue the user's approved local storefront implementation workflow for the directly requested Journal page",
+    "journalContinuation": "User said continue while responsive verification and shared-store integration checks were in progress",
+    "marqueeScope": "Repair the homepage principles strip to repeat continuously left-to-right with no blank gap, responsive coverage, and a stationary reduced-motion version",
+    "ajaxSearchScope": "Add asynchronous fetched-catalog search suggestions to the shared header on every page, with debounced input, product images, BDT prices, loading/no-results/error/retry states, and a View all results link to Shop",
+    "sizeGuideScope": "Add a responsive Find the right fit section to Our Approach, using original code-native floor/table lamp measurement illustrations with height, shade-width and base-width guidance; exact product dimensions vary and no unverified numeric specifications will be invented",
+    "additionalAuthorization": "The user directly requested the marquee fix and AJAX search while the Journal completion checks were in progress",
+    "journalContent": "Original prototype lighting and room-styling stories; no invented authors, publication dates, product specifications, manufacturing, or sustainability claims",
+    "journalPlan": [
+      "Create a spacious magazine-style masthead, featured story, topic-filtered article grid, and a room-inspiration closing feature.",
+      "Provide readable, directly linkable stories with useful shopping destinations and no-JavaScript fallbacks.",
+      "Reuse shared navigation, search-to-Shop, BDT bag, and Facebook footer; connect Journal links across the site.",
+      "Verify topic filtering, URL history, article navigation, responsive layouts, keyboard access, local assets, and shared-store regression."
+    ],
+    "approachPlan": [
+      "Create an editorial hero, brand philosophy, three design principles, and a visual details section.",
+      "Add an accessible three-part guide to lighting everyday spaces with relevant shopping links.",
+      "Reuse the shared navigation, search-to-Shop, BDT shopping bag, and footer.",
+      "Connect Our Approach and story links across Home, Shop, and Collections.",
+      "Verify desktop and mobile layout, guide interactions, keyboard access, navigation, search, and cart persistence."
+    ],
+    "shopPlan": [
+      "Build a compact editorial introduction and product-first layout with reusable store navigation and bag.",
+      "Provide category navigation, search, price and edit filters, visible removable filter chips, result counts, and sorting.",
+      "Add product quick views, persistent saved items, and comfortable or compact grid views.",
+      "Use a mobile filter dialog with a result-count action and accessible focus handling.",
+      "Connect Shop links across the existing site and verify desktop, mobile, filtering, URLs, saved items, and cart integration."
+    ],
+    "collectionsPlan": [
+      "Create collections.html using the existing brand tokens, header, footer, and local imagery.",
+      "Feature floor lamps in an editorial hero and present all six categories in a responsive collection grid.",
+      "Connect category cards to a searchable product edit with BDT prices, sorting, and the shared persistent bag.",
+      "Link Collections from the home navigation and connect the supplied Facebook profile.",
+      "Verify desktop and mobile layouts, navigation, filtering, search, sorting, keyboard access, and cart persistence."
+    ],
+    "shopFileRepair": "User directly authorized repairing the existing approved Shop page. Reproduced local-file CORS blocking module startup; provide a generated classic script bundle while preserving editable modules.",
+    "searchRepair": "Implement requested AJAX header search with debounced inline product suggestions, fetched catalog over HTTP and bundled data for direct file previews. Remove the native blue search cancel icon; retain accessible panel close.",
+    "socialSection": "Add homepage photo cards linking to supplied profiles; update all footer Follow links. The new Facebook URL replaces the previous profile URL.",
+    "marqueeRepair": "Repeat existing strip copy in two identical full-width groups, scrolling left to right without gaps; support pause and reduced motion.",
+    "reviewsSection": "Continue directly authorized homepage changes: expand existing single quote into a responsive three-card review section before social links, using established brand colors. Clearly label illustrative sample content; no fabricated customer identities, verified-purchase badges, or aggregate ratings.",
+    "stickyHeader": "Interpret stacky as sticky: keep the shared navigation visible at the top while scrolling on every page; offset existing sticky controls and anchor scrolling by the header height.",
+    "reviewsContinuation": "User said continue; resume the approved homepage review section."
+  },
+  "openQuestions": [
+    {
+      "id": "q-005",
+      "text": "What are the real Instagram and Pinterest URLs for the footer Follow links?",
+      "category": "content",
+      "priority": "medium",
+      "status": "resolved",
+      "resolution": "User supplied Pinterest, Facebook and YouTube as the requested social destinations."
+    }
+  ],
+  "acceptanceCriteria": [
+    "Homepage makes floor lamps the primary shopping path.",
+    "Visitors can browse all lamp categories and search products.",
+    "Product prices and cart totals display in BDT.",
+    "Visitors can add, remove, and adjust products in a persistent demo cart.",
+    "Layout is responsive and keyboard accessible.",
+    "Collections is a separate page linked from the main navigation, featuring floor lamps and all six categories.",
+    "Collection cards filter the product edit, with matching result counts and functional sorting.",
+    "The supplied Facebook profile is linked in the footer.",
+    "Shop is a separate modern page connected from the home and Collections navigation.",
+    "Shop filters combine correctly, remain visible as removable chips, and persist in shareable URLs.",
+    "Visitors can inspect product details, save products, and add to the shared bag without leaving the listing.",
+    "The Shop page supports desktop and mobile layouts, accessible dialogs, and useful empty states.",
+    "Our Approach is a dedicated brand-matched page linked from site navigation and story calls to action.",
+    "The Approach page explains lighting philosophy, provides an accessible room-lighting guide, and connects to Shop and Collections.",
+    "The Approach page works on mobile and desktop with the existing shared cart and a functional search-to-Shop form.",
+    "Journal is a dedicated brand-matched editorial page linked from every main navigation and footer.",
+    "Visitors can filter Journal stories by topic and open readable, directly linkable articles with useful next steps.",
+    "Journal and its article reader are responsive, keyboard accessible, and integrated with the shared bag and search.",
+    "Shop products, filters, search, saved pieces, and bag work when shop.html is opened directly using file:// as well as over HTTP.",
+    "Header search displays debounced inline product suggestions with images and BDT prices, supports AJAX retry and keyboard navigation, and hides the native blue cancel icon.",
+    "Homepage social section and all footer Follow links use the supplied Pinterest, Facebook, and YouTube URLs.",
+    "Homepage strip repeats continuously left to right without gaps and supports pause and reduced motion.",
+    "Homepage includes an accessible review section with clearly labeled sample content, responsive cards, and working links to related lamp categories.",
+    "Shared navigation stays visible while scrolling on desktop and mobile; search, bag, mobile menu, anchors, and sticky Shop controls remain accessible."
+  ],
+  "verification": {
+    "scope": "Modern Collections page and shared storefront integration",
+    "unitTests": "npm test: 5 passed, 0 failed",
+    "browserChecks": "Chrome: category filtering, direct URLs and browser Back, sorting and restoring featured order, global search and empty-state reset, BDT cart totals and quantities, cross-page cart persistence, focus trap and restoration, mobile navigation, skip link, image loading and local links passed",
+    "viewportWidths": [
+      1440,
+      1024,
+      768,
+      390,
+      320
+    ],
+    "visualReview": "Desktop hero, collection directory, and mobile page screenshots reviewed; mobile hero photograph moved above feature copy",
+    "result": "No horizontal overflow, script errors, or failed local asset requests",
+    "verifiedAt": "2026-09-08T10:33:00+06:00"
+  },
+  "shopVerification": {
+    "scope": "Dedicated Shop page and shared navigation/cart integration",
+    "unitTests": "npm test: 9 passed, 0 failed",
+    "browserChecks": "Chrome passed category/edit/price combinations, range validation, search, safe query rendering, sorting, removable filter chips, empty-state recovery, URL reload/Back, saved-item persistence, grid preferences, quick views, modal focus, shared cart across all three pages, responsive filters, and resize handling",
+    "regressionChecks": "Existing Collections browser suite passed",
+    "viewportWidths": [
+      1440,
+      1024,
+      768,
+      390,
+      320
+    ],
+    "visualReview": "Desktop full page, mobile page, product quick view, and mobile filter panel screenshots reviewed",
+    "result": "No horizontal overflow, script errors, or failed local asset requests; local preview returned HTTP 200",
+    "verifiedAt": "2026-09-08T10:54:17+06:00"
+  },
+  "approachVerification": {
+    "scope": "Our Approach editorial page, navigation integration, search-to-Shop, and shared bag",
+    "unitTests": "npm test: 9 passed, 0 failed",
+    "browserChecks": "Chrome passed guide image/caption changes, keyboard operation, category destinations, search form, menu, bag totals/quantity/persistence/focus, navigation from all existing pages, local links, section anchors, and Facebook destination",
+    "regressionChecks": "Existing Shop browser suite passed",
+    "viewportWidths": [
+      1440,
+      1024,
+      768,
+      390,
+      320
+    ],
+    "visualReview": "Desktop hero, full page, photo collage, and mobile page screenshots reviewed; inset photo sizing corrected and overlap checked at each viewport",
+    "progressiveEnhancement": "Lighting guide remains usable without JavaScript; normal and reduced-motion keyboard behavior checked",
+    "result": "No horizontal overflow, image overlap, script errors, or failed local assets; local preview returned HTTP 200",
+    "verifiedAt": "2026-09-08T11:13:51+06:00"
+  },
+  "updatedAt": "2026-09-08T10:21:54.081402+00:00",
+  "shopFileVerification": {
+    "scope": "Direct-file Shop startup repair",
+    "unitTests": "npm test: 9 passed",
+    "browserChecks": "Chrome file:// and HTTP: 12 products; category, edit and price filters; search; sorting; URL reload and Back; saved pieces; quick view; bag quantities and persistence; keyboard focus; mobile dialogs and resizing. No script errors or failed local assets. HTTP cross-page bag regression passed.",
+    "viewportWidths": [
+      1440,
+      1024,
+      768,
+      390,
+      320
+    ],
+    "visualReview": "Desktop and mobile screenshots reviewed",
+    "verifiedAt": "2026-09-08T09:53:21.042616+00:00"
+  },
+  "searchSocialMarqueeVerification": {
+    "verifiedAt": "2026-09-08T10:08:52.185810+00:00",
+    "unitTests": "9 passed",
+    "search": "Chrome HTTP and file previews: live suggestions, price display, keyboard product preview, empty/reset states, catalog caching, error retry, stale-response protection, responsive results. Shared search passed on all six pages. Native blue cancel icon removed; screenshots reviewed.",
+    "social": "Exact profile destinations verified in homepage cards and all six footers. Photos loaded. Desktop/mobile screenshots reviewed.",
+    "marquee": "Equal-width groups within subpixel tolerance; coverage across animation phases and rightward movement verified at 320, 390, 768, 1440 and 3840px. Pause and reduced-motion behavior passed over HTTP and file previews.",
+    "regression": "Full existing Shop browser suite passed; no script errors."
+  },
+  "reviewsHeaderVerification": {
+    "verifiedAt": "2026-09-08T10:21:54.081402+00:00",
+    "unitTests": "npm test: 9 passed; npm run build passed",
+    "browserChecks": "Chrome over HTTP: sticky header on all six pages at 1440, 768, 390 and 320px; available header search, bag and mobile navigation passed; Shop toolbar clears header. Review cards checked at 1440, 1024, 768, 390 and 320px, including image loading, keyboard focus and category link navigation. No horizontal overflow or script errors.",
+    "visualReview": "Desktop and mobile review cards and sticky Shop header screenshots reviewed.",
+    "content": "Three explicitly labeled sample reviews without fabricated customer identities or ratings."
+  }
+}

@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Shop considered lighting for everyday living. Explore floor lamps and more, refine by price, save your favourites, and find your glow with SHINE THROUGH." />
+    <title>Shop lighting — SHINE THROUGH</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="shop.css" />
+    <script defer src="shop.bundle.js"></script>
+    <link rel="icon" type="image/png" href="asseats/favicon.png?v=option-b-2">
+  </head>
+  <body class="shop-page">
+    <a class="skip-link" href="#shop">Skip to products</a>
+    <div class="announcement-bar"><p>Thoughtful lighting, delivered across Bangladesh</p><span>A little light. A whole new feeling.</span></div>
+    <header class="site-header">
+      <div class="header-inner">
+        <button class="menu-toggle icon-button" type="button" data-menu-toggle aria-label="Open navigation" aria-expanded="false" aria-controls="main-navigation"><span class="menu-icon">☰</span></button>
+        <a class="brand" href="index.html" aria-label="SHINE THROUGH home"><img class="brand-logo" src="asseats/shine-through-logo.svg" alt="SHINE THROUGH" width="1039" height="607"></a>
+        <nav class="site-nav" id="main-navigation" data-mobile-menu aria-label="Main navigation"><a href="shop.html" aria-current="page">Shop</a><a href="collections.html">Collections</a><a href="approach.html">Our approach</a><a href="journal.html">Journal</a></nav>
+        <div class="header-actions">
+          <button class="icon-button" type="button" data-search-toggle aria-label="Open search" aria-expanded="false" aria-controls="shop-search-panel"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.5" /><path d="m16 16 5 5" /></svg></button>
+          <button class="icon-button saved-header" type="button" data-show-saved aria-label="View saved pieces" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.8 8.8c0 5.2-8.8 10-8.8 10s-8.8-4.8-8.8-10A4.8 4.8 0 0 1 12 6.1a4.8 4.8 0 0 1 8.8 2.7Z" /></svg><span class="saved-count" data-saved-count hidden>0</span></button>
+          <button class="cart-button" type="button" data-cart-toggle aria-label="Open shopping bag"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1 12H6L5 8Z" /><path d="M9 9V6a3 3 0 0 1 6 0v3" /></svg><span>Bag</span><b class="cart-count is-hidden" data-cart-count>0</b></button>
+        </div>
+      </div>
+      <div class="search-panel" id="shop-search-panel" data-search-panel aria-hidden="true" inert><div class="search-panel-inner"><label for="site-search">Find your next light</label><div class="search-input-wrap"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.5" /><path d="m16 16 5 5" /></svg><input id="site-search" type="search" placeholder="Search lamps, materials, and more" data-search-input maxlength="200" autocomplete="off" /><button class="icon-button" type="button" data-close-search aria-label="Close search">×</button></div><p class="search-feedback" data-search-feedback role="status"></p><a class="text-link" href="#shop" data-view-search-results>View matching pieces <span aria-hidden="true">→</span></a></div></div>
+    </header>
+
+    <main>
+      <section class="shop-intro section-shell" aria-labelledby="shop-title">
+        <nav class="shop-breadcrumbs" aria-label="Breadcrumb"><a href="index.html">Home</a><span aria-hidden="true">/</span><span aria-current="page">Shop</span></nav>
+        <div class="shop-hero">
+          <div class="shop-hero-copy"><p class="eyebrow">The SHINE THROUGH shop</p><h1 id="shop-title">Light up<br /><em>your everyday.</em></h1><p>Considered forms. Softer evenings. Find the light that makes your space feel a little more like you.</p></div>
+          <a class="shop-feature" href="?category=Floor+lamps#shop" data-shop-category="Floor lamps"><div class="shop-feature-copy"><span class="shop-feature-label"><i aria-hidden="true"></i> Our signature edit</span><h2>A little height.<br /> A lot of <em>feeling.</em></h2><span class="shop-feature-link">Explore floor lamps <span aria-hidden="true">↗</span></span></div><img src="asseats/737046296_122213207996860537_6242905900036558432_n.jpg" alt="A sculptural wooden floor lamp with a warm linen shade" width="1080" height="1080" fetchpriority="high" /></a>
+        </div>
+      </section>
+
+      <section class="shop-catalog section-shell" id="shop" aria-labelledby="catalog-title">
+        <div class="shop-categories" role="group" aria-label="Lighting categories" data-shop-categories></div>
+        <div class="shop-toolbar">
+          <button class="filter-toggle" type="button" data-open-filters aria-controls="shop-filter-content" aria-expanded="true"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 17h16M9 4v6M15 14v6" /></svg><span data-filter-toggle-label>Filters</span><span class="active-filter-count" data-filter-count hidden>0</span></button>
+          <div class="catalog-heading"><h2 id="catalog-title" data-category-title tabindex="-1">All lighting</h2><span data-results-count role="status" aria-live="polite"></span></div>
+          <div class="catalog-search"><label class="visually-hidden" for="catalog-search">Search products</label><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.5" /><path d="m16 16 5 5" /></svg><input id="catalog-search" type="search" placeholder="Find your light…" maxlength="200" data-shop-search autocomplete="off" /></div>
+          <div class="shop-sort"><label for="shop-sort">Sort by</label><select id="shop-sort" data-shop-sort><option value="featured">Featured</option><option value="price-ascending">Price: low to high</option><option value="price-descending">Price: high to low</option><option value="name">Name: A–Z</option></select></div>
+          <div class="view-controls" role="group" aria-label="Product grid size"><button type="button" data-grid-view="comfortable" aria-label="Larger product images" aria-pressed="false"><svg viewBox="0 0 20 20" aria-hidden="true"><rect x="3" y="3" width="14" height="14" rx="1" /></svg></button><button type="button" data-grid-view="compact" aria-label="Compact product grid" aria-pressed="true"><svg viewBox="0 0 20 20" aria-hidden="true"><rect x="3" y="3" width="5" height="5" rx=".5" /><rect x="12" y="3" width="5" height="5" rx=".5" /><rect x="3" y="12" width="5" height="5" rx=".5" /><rect x="12" y="12" width="5" height="5" rx=".5" /></svg></button></div>
+        </div>
+        <div class="shop-applied-filters" data-applied-filters aria-label="Applied filters"></div>
+
+        <div class="shop-layout" data-shop-layout>
+          <aside class="shop-sidebar" aria-label="Refine products" data-filter-home>
+            <div id="shop-filter-content" data-filter-content>
+              <div class="filter-heading"><h3>A more personal edit.</h3><button type="button" class="subtle-button" data-clear-shop>Reset</button></div>
+              <details class="filter-group" open><summary>Shop the edit <span aria-hidden="true">−</span></summary><fieldset class="edit-options"><legend class="visually-hidden">Choose a product edit</legend><label><input type="radio" name="shop-edit" value="all" checked /><span>All pieces</span><small data-edit-count="all"></small></label><label><input type="radio" name="shop-edit" value="new" /><span>New arrivals</span><small data-edit-count="new"></small></label><label><input type="radio" name="shop-edit" value="sale" /><span>On sale</span><small data-edit-count="sale"></small></label><label><input type="radio" name="shop-edit" value="saved" /><span>Saved pieces</span><small data-edit-count="saved"></small></label></fieldset></details>
+              <details class="filter-group" open><summary>Price range <span aria-hidden="true">−</span></summary><p class="filter-description">Find your glow, within your budget.</p><form class="price-form" data-price-form><div class="price-inputs"><label for="min-price">From <span>৳ <input id="min-price" name="min" type="number" min="0" max="1000000" step="any" placeholder="0" inputmode="decimal" /></span></label><span class="price-dash" aria-hidden="true">—</span><label for="max-price">To <span>৳ <input id="max-price" name="max" type="number" min="0" max="1000000" step="any" placeholder="Any" inputmode="decimal" aria-describedby="price-error" /></span></label></div><p class="price-error" id="price-error" role="status" hidden></p><button class="price-apply" type="submit">Apply price range <span aria-hidden="true">→</span></button></form><div class="price-presets" role="group" aria-label="Quick price ranges"><button type="button" data-price-preset="5000" aria-pressed="false">Under ৳5,000</button><button type="button" data-price-preset="8000" aria-pressed="false">Under ৳8,000</button></div></details>
+              <div class="filter-note"><span aria-hidden="true">✳</span><p>Not sure where<br />to begin?</p><a class="text-link" href="collections.html">Find your collection <span aria-hidden="true">↗</span></a></div>
+            </div>
+          </aside>
+          <div class="shop-listing"><div class="shop-product-grid" data-product-grid></div><p class="shop-list-end" data-list-end></p></div>
+        </div>
+        <noscript><p>Enable JavaScript to explore and filter the lamps, or <a href="collections.html">browse our collections</a>.</p></noscript>
+      </section>
+
+      <section class="shop-closing section-shell" aria-labelledby="shop-closing-title"><p class="eyebrow">Find a little inspiration</p><div><h2 id="shop-closing-title">A room is a feeling.<br /><em>Make it yours.</em></h2><a class="button button-outline" href="collections.html">Explore our collections <span aria-hidden="true">↗</span></a></div></section>
+    </main>
+
+    <footer class="site-footer" id="footer"><div class="footer-main section-shell"><div class="footer-brand-block"><a class="brand footer-brand" href="index.html"><img class="brand-logo" src="asseats/shine-through-logo.svg" alt="SHINE THROUGH" width="1039" height="607"></a><p>Thoughtful lighting for rooms that feel like you.</p></div><div class="footer-links"><div><p class="footer-label">Explore</p><a href="shop.html" aria-current="page">Shop all</a><a href="shop.html?category=Floor+lamps#shop">Floor lamps</a><a href="collections.html">Collections</a><a href="invest.html">Invest with us ↗</a></div><div><p class="footer-label">Discover</p><a href="approach.html">Our approach</a><a href="journal.html">Journal</a></div><div><p class="footer-label">Follow</p><a href="https://www.pinterest.com/Shainthrough/" target="_blank" rel="noopener noreferrer">Pinterest ↗</a><a href="https://www.facebook.com/shinethrough26/" target="_blank" rel="noopener noreferrer">Facebook ↗</a><a href="https://www.youtube.com/@Shainthrough" target="_blank" rel="noopener noreferrer">YouTube ↗</a></div></div></div><div class="footer-bottom section-shell"><span>© 2026 SHINE THROUGH</span><span>Made for better evenings</span><span>Bangladesh · BDT ৳</span></div></footer>
+
+    <dialog class="filter-dialog" data-filter-dialog aria-labelledby="filter-dialog-title"><div class="filter-dialog-heading"><div><p class="eyebrow">Make it your edit</p><h2 id="filter-dialog-title">Filters</h2></div><button class="icon-button close-button" type="button" data-close-filters aria-label="Close filters">×</button></div><div class="filter-dialog-body" data-filter-dialog-body></div><div class="filter-dialog-footer"><button class="subtle-button" type="button" data-clear-shop>Reset all</button><button class="button button-dark" type="button" data-close-filters data-show-results>Show all pieces <span aria-hidden="true">→</span></button></div></dialog>
+    <dialog class="product-dialog" data-product-dialog aria-labelledby="quick-view-title"><button class="icon-button dialog-close" type="button" data-close-product aria-label="Close product details">×</button><div data-product-details></div></dialog>
+
+    <div class="cart-drawer" data-cart-drawer aria-hidden="true" inert><div class="cart-backdrop" data-cart-backdrop></div><aside class="cart-panel" role="dialog" aria-modal="true" aria-labelledby="cart-title"><div class="cart-panel-header"><div><p class="eyebrow">Your edit</p><h2 id="cart-title">Shopping bag</h2></div><button class="icon-button close-button" type="button" data-close-cart aria-label="Close shopping bag">×</button></div><div class="cart-items" data-cart-items></div><div class="cart-empty" data-cart-empty><span class="empty-symbol" aria-hidden="true">✳</span><h3>Your bag is quiet.</h3><p>Find a light that makes you want to stay awhile.</p><a class="button button-dark" href="#shop" data-close-cart>Explore the edit</a></div><div class="cart-summary is-hidden" data-cart-summary><div class="summary-row"><span>Subtotal</span><strong data-cart-subtotal>৳ 0</strong></div><p>Shipping and taxes are calculated at checkout.</p><button class="button button-dark button-full" type="button" data-demo-checkout>Continue to checkout <span aria-hidden="true">↗</span></button><button class="continue-shopping" type="button" data-close-cart>Continue shopping</button></div></aside></div>
+    <div class="toast" data-toast role="status" aria-live="polite"></div>
+  </body>
+</html>
