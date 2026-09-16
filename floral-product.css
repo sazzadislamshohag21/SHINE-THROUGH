@@ -1,0 +1,16 @@
+/* Preserve the final mahogany page layout; crop only the supplied product photo. */
+.lamp-main-image-link, .floral-thumb-photo, .floral-story-photo, .floral-detail-photo { overflow: hidden; position: relative; }
+.floral-thumb-photo { display: block; aspect-ratio: 1; }
+.lamp-thumb .floral-thumb-photo img { display: block; width: 100%; height: 100%; object-fit: contain; }
+.floral-story-photo { aspect-ratio: 1; background: var(--stone); }
+.floral-story-photo img { display: block; width: 100%; height: 100%; object-fit: contain; }
+.floral-crop-shade { transform: scale(2.65); transform-origin: 50% 2%; }
+.floral-crop-frame { transform: scale(2.25); transform-origin: 50% 58%; }
+.floral-crop-base { transform: scale(2.6); transform-origin: 50% 100%; }
+.floral-detail-photo > img { width: 100%; height: 100%; object-fit: contain; }
+.lamp-lightbox[data-crop]:not([data-crop="none"]) > img { object-fit: contain; }
+.lamp-thumb > .floral-thumb-photo { padding: 0; }
+
+.floral-lightbox-photo { width: min(100%, calc(100dvh - 190px)); aspect-ratio: 1; overflow: hidden; margin: auto; background: var(--stone); }
+.floral-lightbox-photo img { display: block; width: 100%; height: 100%; object-fit: contain; }
+[data-story-description] { margin: 25px 0 16px; color: var(--muted); font-size: 11px; line-height: 1.9; }

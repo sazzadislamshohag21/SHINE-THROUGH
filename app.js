@@ -1,7 +1,9 @@
+import { FLORAL_PRODUCTS } from './floral-products.js';
 import { initAjaxSearch } from './search.js';
 import { contactPanelHTML, orderMessage, orderEmailURL } from './store-contact.js';
 
 export const PRODUCTS = [
+  ...FLORAL_PRODUCTS,
   {
     id: 'mahogany-wooden-floor-lamp',
     name: 'Mahogany Wooden Floor Lamp',

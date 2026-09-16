@@ -1,0 +1,31 @@
+{
+  "mode": "Built-in image_gen",
+  "prompt": "Use case: product-mockup. Create one square photorealistic lifestyle product image for a lighting shop. Input image is the exact product reference: preserve this lamp's precise wooden frame geometry, number and position of shelves, wood finish, cylindrical shade shape and exact floral pattern and colors. Show the entire lamp, from shade to feet, illuminated beside a simple cream armchair in an uncluttered warm beige room. Lamp is the clear main subject, fills about 85% of image height, no objects obscure it. Soft warm evening light, premium editorial product photography. Do not redesign the lamp, add shelves, change flowers, add text, logos, or watermarks. Output a single image, not a collage.",
+  "products": [
+    {
+      "name": "verdant-curve",
+      "file": "asseats/floral-floor-lamps/verdant-curve/lifestyle.png",
+      "source": "/Users/user/.codex/generated_images/01a0a7d4-5072-7d61-9126-f9705d4db74f/exec-bb4b6f25-ab70-4542-b2ca-ec075a4d46a8.png"
+    },
+    {
+      "name": "rosewood-bloom",
+      "file": "asseats/floral-floor-lamps/rosewood-bloom/lifestyle.png",
+      "source": "/Users/user/.codex/generated_images/01a0a7d4-5072-7d61-9126-f9705d4db74f/exec-87578a79-e4f7-4a27-b7e3-afaf15bfeb7c.png"
+    },
+    {
+      "name": "peony-frame",
+      "file": "asseats/floral-floor-lamps/peony-frame/lifestyle.png",
+      "source": "/Users/user/.codex/generated_images/01a0a7d4-5072-7d61-9126-f9705d4db74f/exec-6802ac7a-07f6-4f2e-b23b-d1560606d6eb.png"
+    },
+    {
+      "name": "botanical-tier",
+      "file": "asseats/floral-floor-lamps/botanical-tier/lifestyle.png",
+      "source": "/Users/user/.codex/generated_images/01a0a7d4-5072-7d61-9126-f9705d4db74f/exec-d6522dd8-e6aa-44bd-9ae4-9824721e59ba.png"
+    },
+    {
+      "name": "sunflower-curve",
+      "file": "asseats/floral-floor-lamps/sunflower-curve/lifestyle.png",
+      "source": "/Users/user/.codex/generated_images/01a0a7d4-5072-7d61-9126-f9705d4db74f/exec-298c1cc7-3419-4dad-98da-eca115a8a2a4.png"
+    }
+  ]
+}

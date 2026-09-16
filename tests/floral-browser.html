@@ -1,0 +1,37 @@
+<!doctype html><meta charset="utf-8"><title>Product verification</title><pre id="results">RUNNING</pre><iframe id="frame" style="height:1100px;border:0"></iframe><script type="module">
+import { FLORAL_PRODUCTS } from '../floral-products.js';
+const results=[]; const frame=document.querySelector('#frame');
+const assert=(test,message)=>{if(!test)throw Error(message)};
+const pause=ms=>new Promise(r=>setTimeout(r,ms));
+try {
+for(const width of [1440,390]) for(const p of FLORAL_PRODUCTS){
+ frame.style.width=width+'px';
+ await new Promise(resolve=>{frame.onload=resolve;frame.src='../'+p.page});
+ const d=frame.contentDocument,w=frame.contentWindow;
+ await pause(100);
+ assert(d.querySelector('#lamp-title').textContent.includes(p.shortName),'wrong title');
+ assert(d.documentElement.scrollWidth<=width,'horizontal overflow '+d.documentElement.scrollWidth);
+ for(const img of d.images)img.loading='eager';
+ await Promise.all([...d.images].map(img=>img.decode()));
+ for(const link of d.querySelectorAll('[data-lamp-view]')){link.click();assert(link.getAttribute('aria-current')==='true','gallery selection');}
+ d.querySelector('[data-image-zoom]').click();assert(d.querySelector('dialog').open,'zoom');
+ d.querySelector('[data-lightbox-step="-1"]').click();assert(d.querySelector('[data-lightbox-counter]').textContent==='4 / 5','zoom navigation');
+ d.querySelector('[data-close-lightbox]').click();
+ d.querySelector('[data-original-toggle]').click();assert(d.querySelector('[data-lamp-image]').src.endsWith('original.jpg'),'original');
+ d.querySelector('[data-original-toggle]').click();
+ const save=d.querySelector('[data-lamp-save]');let before=save.getAttribute('aria-pressed');save.click();assert(save.getAttribute('aria-pressed')!==before,'save');
+ for(const link of d.querySelectorAll('[data-story-view]')){link.click();assert(link.getAttribute('aria-current')==='true','story');}
+ d.querySelector('[data-lamp-quantity="1"]').click();assert(d.querySelector('#lamp-quantity').value==='2','quantity');
+ const cartBefore=JSON.parse(w.localStorage.getItem('shine-through-cart') || '[]');
+ d.querySelector('[data-add-to-cart]').click();assert(d.querySelector('[data-cart-items]').textContent.includes(p.name),'cart product');
+ const cartAfter=JSON.parse(w.localStorage.getItem('shine-through-cart'));
+ assert(cartAfter.find(item=>item.id===p.id).quantity===(cartBefore.find(item=>item.id===p.id)?.quantity||0)+2,'cart quantity');
+ if(cartAfter.every(item=>FLORAL_PRODUCTS.some(p=>p.id===item.id))){
+ const total=cartAfter.reduce((sum,item)=>sum+item.quantity*FLORAL_PRODUCTS.find(p=>p.id===item.id).price,0);
+ assert(Number(d.querySelector('[data-cart-subtotal]').textContent.replace(/[^0-9]/g,''))===total,'cart total');
+ }
+ results.push(p.shortName+' '+width+'px PASS');
+}
+document.querySelector('#results').textContent=results.join('\n')+'\nALL PASS';
+}catch(e){document.querySelector('#results').textContent=results.join('\n')+'\nFAIL '+e.stack;}
+</script>

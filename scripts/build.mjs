@@ -1,3 +1,4 @@
+import './build-floral-pages.mjs';
 import { build } from 'esbuild';
 import { readFile, writeFile, readdir } from 'node:fs/promises';
 import { PRODUCTS } from '../app.js';
@@ -5,7 +6,7 @@ import { DEFAULT_PRODUCT_ID, renderProductPage } from '../product-content.js';
 import { STORE_CONTACT, ORDER_CHANNELS } from '../store-contact.js';
 
 const root = new URL('../', import.meta.url);
-for (const file of (await readdir(root)).filter(name => name.endsWith('.html'))) {
+for (const file of (await readdir(root)).filter(name => !name.startsWith('._') && name.endsWith('.html'))) {
   const path = new URL(file, root);
   const source = await readFile(path, 'utf8');
   const links = `<div class="store-contact-links">${STORE_CONTACT.email ? `<a href="mailto:${STORE_CONTACT.email}">Email us ↗</a>` : ''}<a href="${STORE_CONTACT.facebook}" target="_blank" rel="noopener noreferrer">Contact on Facebook ↗</a></div>`;

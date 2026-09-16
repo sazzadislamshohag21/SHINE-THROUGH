@@ -7,7 +7,7 @@ import { PRODUCTS } from '../app.js';
 import { PRODUCT_MEDIA } from '../product-media.js';
 
 const root = new URL('../', import.meta.url);
-const files = (await readdir(root)).filter(name => /\.(js|css|html)$/.test(name));
+const files = (await readdir(root)).filter(name => !name.startsWith('._') && /\.(js|css|html)$/.test(name));
 for (const name of files) {
   const source = await readFile(new URL(name, root), 'utf8');
   if (!name.endsWith('.html')) {
@@ -57,6 +57,7 @@ const hashes = new Map();
 let mediaCount = 0;
 async function inspectMedia(directory) {
   for (const entry of await readdir(directory, { withFileTypes: true })) {
+    if (entry.name.startsWith('._')) continue;
     const path = new URL(entry.name + (entry.isDirectory() ? '/' : ''), directory);
     if (entry.isDirectory()) await inspectMedia(path);
     else if (/\.(png|jpe?g|webp|svg|gif|mp4|mov)$/i.test(entry.name)) {
