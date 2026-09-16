@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "status": "approved",
+  "status": "implemented",
   "requirements": [
     {
       "id": "req-001",
@@ -411,6 +411,384 @@
       "supersededBy": null,
       "supersedes": [],
       "conflictsWith": []
+    },
+    {
+      "id": "req-030",
+      "text": "http://127.0.0.1:5502/product.html#product-main add here",
+      "category": "content",
+      "priority": "medium",
+      "status": "active",
+      "source": {
+        "messageId": null,
+        "receivedAt": "2026-09-13T06:12:14.226666+00:00"
+      },
+      "supersededBy": null,
+      "supersedes": [],
+      "conflictsWith": []
+    },
+    {
+      "id": "req-031",
+      "text": "SHINE THROUGH in this Folde you can get a new produt add update thes in shop",
+      "category": "content",
+      "priority": "high",
+      "status": "active",
+      "source": {
+        "messageId": null,
+        "receivedAt": "2026-09-13T06:16:54.634947+00:00"
+      },
+      "supersededBy": null,
+      "supersedes": [],
+      "conflictsWith": []
+    },
+    {
+      "id": "req-032",
+      "text": "Use the Documents SHINE THROUGH product.html page for the pictured Mahogany Wooden Floor Lamp in Downloads SHINE THROUGH shop.html.",
+      "category": "content",
+      "priority": "high",
+      "status": "active",
+      "source": {
+        "messageId": null,
+        "receivedAt": "2026-09-13T10:28:58.840567+00:00"
+      },
+      "supersededBy": null,
+      "supersedes": [],
+      "conflictsWith": []
+    },
+    {
+      "id": "req-033",
+      "text": "Add the screenshot’s Meet your next favourite section to http://127.0.0.1:5503/mahogany-product.html.",
+      "category": "layout",
+      "priority": "high",
+      "status": "active",
+      "source": {
+        "messageId": null,
+        "receivedAt": "2026-09-13T10:38:08.829388+00:00"
+      },
+      "supersededBy": null,
+      "supersedes": [],
+      "conflictsWith": []
+    },
+    {
+      "id": "req-034",
+      "text": "Replace the Mahogany front image studio background with the warm room background from the provided reference.",
+      "category": "visual",
+      "priority": "high",
+      "status": "active",
+      "source": {
+        "messageId": null,
+        "receivedAt": "2026-09-13T10:47:02.042637+00:00"
+      },
+      "supersededBy": null,
+      "supersedes": [],
+      "conflictsWith": []
+    },
+    {
+      "id": "req-035",
+      "text": "file:///Users/stackifya/Downloads/SHINE%20THROUGH/mahogany-product.html header must be Same all page",
+      "category": "layout",
+      "priority": "high",
+      "status": "active",
+      "source": {
+        "messageId": null,
+        "receivedAt": "2026-09-13T10:47:02.042637+00:00"
+      },
+      "supersededBy": null,
+      "supersedes": [],
+      "conflictsWith": []
+    },
+    {
+      "id": "req-036",
+      "text": "[Image #1] fit full — fill the Mahogany product gallery image without empty side strips.",
+      "category": "visual",
+      "priority": "high",
+      "status": "active",
+      "source": {
+        "messageId": null,
+        "receivedAt": "2026-09-13T10:49:10.062354+00:00"
+      },
+      "supersededBy": null,
+      "supersedes": [],
+      "conflictsWith": []
+    },
+    {
+      "id": "req-037",
+      "text": "[Image #1] product cut fixed this — show the full lamp without cropping or empty side strips.",
+      "category": "visual",
+      "priority": "high",
+      "status": "active",
+      "source": {
+        "messageId": null,
+        "receivedAt": "2026-09-13T10:51:22.495797+00:00"
+      },
+      "supersededBy": null,
+      "supersedes": [],
+      "conflictsWith": []
+    },
+    {
+      "id": "req-038",
+      "text": "'/Users/stackifya/Downloads/SHINE THROUGH/asseats/New Products' add all this new product with this product formet file:///Users/stackifya/Downloads/SHINE%20THROUGH/mahogany-product.html",
+      "category": "content",
+      "priority": "high",
+      "status": "active",
+      "source": {
+        "messageId": null,
+        "receivedAt": "2026-09-13T11:09:09.923737+00:00"
+      },
+      "supersededBy": null,
+      "supersedes": [],
+      "conflictsWith": []
+    },
+    {
+      "id": "req-039",
+      "text": "[Image #1] fixed this left and right side Must product visual don’t cut product",
+      "category": "visual",
+      "priority": "high",
+      "status": "active",
+      "source": {
+        "messageId": null,
+        "receivedAt": "2026-09-13T11:09:09.923737+00:00"
+      },
+      "supersededBy": null,
+      "supersedes": [],
+      "conflictsWith": []
+    },
+    {
+      "id": "req-040",
+      "text": "must be rememer all the products name and and price not be same secect price with product",
+      "category": "content",
+      "priority": "high",
+      "status": "active",
+      "source": {
+        "messageId": null,
+        "receivedAt": "2026-09-13T11:15:54.809715+00:00"
+      },
+      "supersededBy": null,
+      "supersedes": [],
+      "conflictsWith": []
+    },
+    {
+      "id": "req-041",
+      "text": "http://127.0.0.1:5502/shop.html in shop page [Image #1] this product must be same as other [Image #2]",
+      "category": "layout",
+      "priority": "high",
+      "status": "active",
+      "source": {
+        "messageId": null,
+        "receivedAt": "2026-09-14T02:40:20.936559+00:00"
+      },
+      "supersededBy": null,
+      "supersedes": [],
+      "conflictsWith": []
+    },
+    {
+      "id": "req-042",
+      "text": "if you need genarat 1:1 images with Home background",
+      "category": "visual",
+      "priority": "high",
+      "status": "active",
+      "source": {
+        "messageId": null,
+        "receivedAt": "2026-09-14T02:40:20.936559+00:00"
+      },
+      "supersededBy": null,
+      "supersedes": [],
+      "conflictsWith": []
+    },
+    {
+      "id": "req-043",
+      "text": "[Image #1] removed this products — Dark Curved Shelf, Cross Base Wood, Round Shelf Wood, and Slim Tripod Lamp Stands.",
+      "category": "content",
+      "priority": "high",
+      "status": "active",
+      "source": {
+        "messageId": null,
+        "receivedAt": "2026-09-14T02:41:51.911564+00:00"
+      },
+      "supersededBy": null,
+      "supersedes": [],
+      "conflictsWith": []
+    },
+    {
+      "id": "req-044",
+      "text": "[Image #1] removed this — Rose Garden, Teal Bloom, Blush Flower, Red Bloom, Botanical Sprig Shades and Angular Wood Lamp Stand.",
+      "category": "content",
+      "priority": "high",
+      "status": "active",
+      "source": {
+        "messageId": null,
+        "receivedAt": "2026-09-14T02:41:51.911564+00:00"
+      },
+      "supersededBy": null,
+      "supersedes": [],
+      "conflictsWith": []
+    },
+    {
+      "id": "req-045",
+      "text": "[Image #1] remove this — Sunflower Garden Shade and Tropical Leaf Shade.",
+      "category": "content",
+      "priority": "high",
+      "status": "active",
+      "source": {
+        "messageId": null,
+        "receivedAt": "2026-09-14T02:41:51.911564+00:00"
+      },
+      "supersededBy": null,
+      "supersedes": [],
+      "conflictsWith": []
+    },
+    {
+      "id": "req-046",
+      "text": "[Image #1] replace this with [Image #2] — replace the Mahogany main gallery image shown in the screenshot with supplied square room image.",
+      "category": "visual",
+      "priority": "high",
+      "status": "active",
+      "source": {
+        "messageId": null,
+        "receivedAt": "2026-09-14T02:46:22.585510+00:00"
+      },
+      "supersededBy": null,
+      "supersedes": [],
+      "conflictsWith": []
+    },
+    {
+      "id": "req-047",
+      "text": "always use product images Place holder fit and 1080px x1080px for all",
+      "category": "visual",
+      "priority": "high",
+      "status": "active",
+      "source": {
+        "messageId": null,
+        "receivedAt": "2026-09-14T02:48:37.719410+00:00"
+      },
+      "supersededBy": null,
+      "supersedes": [],
+      "conflictsWith": []
+    },
+    {
+      "id": "req-048",
+      "text": "[Image #1] use this in [Image #2] here also — use the room image on the Mahogany shop card too.",
+      "category": "visual",
+      "priority": "high",
+      "status": "active",
+      "source": {
+        "messageId": null,
+        "receivedAt": "2026-09-14T02:48:37.719410+00:00"
+      },
+      "supersededBy": null,
+      "supersedes": [],
+      "conflictsWith": []
+    },
+    {
+      "id": "req-049",
+      "text": "[Image #1] this not 1080Px x 1080PX make 1080PX — square gallery thumbnails and 1080px assets.",
+      "category": "visual",
+      "priority": "high",
+      "status": "active",
+      "source": {
+        "messageId": null,
+        "receivedAt": "2026-09-14T02:52:59.599215+00:00"
+      },
+      "supersededBy": null,
+      "supersedes": [],
+      "conflictsWith": []
+    },
+    {
+      "id": "req-050",
+      "text": "[Image #1] can you fill side — extend the Light on room background to fill the square without empty sides.",
+      "category": "visual",
+      "priority": "high",
+      "status": "active",
+      "source": {
+        "messageId": null,
+        "receivedAt": "2026-09-14T02:52:59.599215+00:00"
+      },
+      "supersededBy": null,
+      "supersedes": [],
+      "conflictsWith": []
+    },
+    {
+      "id": "req-051",
+      "text": "[Image #1] make fill this all — extend backgrounds for Materials, Top view, and Side view to eliminate side strips.",
+      "category": "visual",
+      "priority": "high",
+      "status": "active",
+      "source": {
+        "messageId": null,
+        "receivedAt": "2026-09-14T02:56:50.065265+00:00"
+      },
+      "supersededBy": null,
+      "supersedes": [],
+      "conflictsWith": []
+    },
+    {
+      "id": "req-052",
+      "text": "[Image #1] add a thamnail images — use a finished product image as the video poster.",
+      "category": "visual",
+      "priority": "high",
+      "status": "active",
+      "source": {
+        "messageId": null,
+        "receivedAt": "2026-09-14T02:56:50.065265+00:00"
+      },
+      "supersededBy": null,
+      "supersedes": [],
+      "conflictsWith": []
+    },
+    {
+      "id": "req-053",
+      "text": "[Image #1] fill side can use a different images — remove side gaps in the Light on editorial section.",
+      "category": "visual",
+      "priority": "high",
+      "status": "active",
+      "source": {
+        "messageId": null,
+        "receivedAt": "2026-09-14T02:59:02.141617+00:00"
+      },
+      "supersededBy": null,
+      "supersedes": [],
+      "conflictsWith": []
+    },
+    {
+      "id": "req-054",
+      "text": "[Image #1] can you replace all this shad to [Image #2] — replace the large leaf-print shade in product images with small botanical-print shade.",
+      "category": "content",
+      "priority": "high",
+      "status": "active",
+      "source": {
+        "messageId": null,
+        "receivedAt": "2026-09-14T03:02:10.624951+00:00"
+      },
+      "supersededBy": null,
+      "supersedes": [],
+      "conflictsWith": []
+    },
+    {
+      "id": "req-055",
+      "text": "[Image #1] change this product Price to 2850",
+      "category": "content",
+      "priority": "high",
+      "status": "active",
+      "source": {
+        "messageId": null,
+        "receivedAt": "2026-09-14T03:02:10.624951+00:00"
+      },
+      "supersededBy": null,
+      "supersedes": [],
+      "conflictsWith": []
+    },
+    {
+      "id": "req-056",
+      "text": "check all Code make it clean and Remoced all Duplicat imagesa and Video file",
+      "category": "technical",
+      "priority": "high",
+      "status": "active",
+      "source": {
+        "messageId": null,
+        "receivedAt": "2026-09-14T03:23:06.245675+00:00"
+      },
+      "supersededBy": null,
+      "supersedes": [],
+      "conflictsWith": []
     }
   ],
   "decisions": {
@@ -485,7 +863,92 @@
     "productScope": "Dedicated responsive product detail page for the existing catalog, defaulting to Halo Wood Floor Lamp, with local photography, image detail views, BDT pricing, quantity, persistent bag and saved pieces, product information, related lamps and shop links.",
     "productContent": "Reuse existing prototype catalog; do not invent variants, reviews, delivery deadlines or return policies.",
     "orderFlow": "User explicitly replaces payment-gateway checkout with email and Facebook order enquiries. Reuse the existing bag, prepare a copyable item/quantity/BDT subtotal summary, open email drafts or the supplied Facebook page, and confirm availability, delivery and payment through the team.",
-    "orderAuthorization": "Direct user instruction to modify the previously approved storefront."
+    "orderAuthorization": "Direct user instruction to modify the previously approved storefront.",
+    "pendingProductAdditionTarget": "http://127.0.0.1:5502/product.html#product-main",
+    "newProductImportAuthorization": "Direct user instruction to import the new product into the previously approved storefront; continue implementation.",
+    "newProductImport": {
+      "source": "SHINE THROUGH/app.js and SHINE THROUGH/product.html",
+      "id": "mahogany-wooden-floor-lamp",
+      "name": "Mahogany Wooden Floor Lamp",
+      "price": 2500,
+      "target": "Main storefront shop, product.html#product-main, search and shared bag",
+      "media": "Reuse provided WebP images and videos already in asseats/mahogany-floor-lamp",
+      "details": "Reuse supplied materials and included items; retain clarification that illuminated photos show the larger leaf-print shade. Exact height and return period remain unconfirmed."
+    },
+    "mahoganyPageImport": "User requested replacement; copy the supplied design into a dedicated local product page and update the matching shop links.",
+    "newProductsImport": {
+      "grouping": "12 provisional descriptive listings: 7 shade designs and 5 stand designs; all 16 source photos represented.",
+      "pricing": "Distinct suggested BDT prices selected per product at user request; shared by shop, detail page, search and shopping bag.",
+      "design": "Reuse the Mahogany header, CSS, gallery, material details, related cards and footer; no invented video or specification claims."
+    },
+    "productNamesAndPrices": {
+      "sunflower-garden-shade": {
+        "name": "Sunflower Garden Shade",
+        "priceBDT": 650
+      },
+      "tropical-leaf-shade": {
+        "name": "Tropical Leaf Shade",
+        "priceBDT": 750
+      },
+      "rose-garden-shade": {
+        "name": "Rose Garden Shade",
+        "priceBDT": 850
+      },
+      "teal-bloom-shade": {
+        "name": "Teal Bloom Shade",
+        "priceBDT": 950
+      },
+      "blush-flower-shade": {
+        "name": "Blush Flower Shade",
+        "priceBDT": 800
+      },
+      "red-bloom-shade": {
+        "name": "Red Bloom Shade",
+        "priceBDT": 900
+      },
+      "botanical-sprig-shade": {
+        "name": "Botanical Sprig Shade",
+        "priceBDT": 600
+      },
+      "angular-wood-lamp-stand": {
+        "name": "Angular Wood Lamp Stand",
+        "priceBDT": 1650
+      },
+      "dark-curved-shelf-lamp-stand": {
+        "name": "Dark Curved Shelf Lamp Stand",
+        "priceBDT": 2250
+      },
+      "cross-base-wood-lamp-stand": {
+        "name": "Cross Base Wood Lamp Stand",
+        "priceBDT": 1950
+      },
+      "round-shelf-wood-lamp-stand": {
+        "name": "Round Shelf Wood Lamp Stand",
+        "priceBDT": 2450
+      },
+      "slim-tripod-lamp-stand": {
+        "name": "Slim Tripod Lamp Stand",
+        "priceBDT": 1450
+      }
+    },
+    "shopCardImageSizing": "User requested matching shop card proportions; use shared desktop/mobile aspect ratios and contain the existing full photo. Home-background generation is optional and unnecessary for this sizing fix. This replaces the previous natural-height shop image treatment.",
+    "removedImportedProducts": [
+      "sunflower-garden-shade",
+      "tropical-leaf-shade",
+      "rose-garden-shade",
+      "teal-bloom-shade",
+      "blush-flower-shade",
+      "red-bloom-shade",
+      "botanical-sprig-shade",
+      "angular-wood-lamp-stand",
+      "dark-curved-shelf-lamp-stand",
+      "cross-base-wood-lamp-stand",
+      "round-shelf-wood-lamp-stand",
+      "slim-tripod-lamp-stand"
+    ],
+    "productImageStandard": "All product image assets use 1080 × 1080 with square responsive placeholders and contain fit, no product cropping. Use the supplied room image for Mahogany across catalog and gallery. Apply to future products.",
+    "lightOnEditorialFrame": "Square frame matches the 1080 × 1080 image without side gaps or cropping; verified in Chrome at 1440, 1024, 768, and 390px.",
+    "mahoganyPriceBDT": 2850
   },
   "openQuestions": [
     {
@@ -496,7 +959,15 @@
       "status": "resolved",
       "resolution": "User supplied Pinterest, Facebook and YouTube as the requested social destinations."
     },
-    "Which real email address should receive customer orders? Asked user; current homepage uses a .example placeholder."
+    "Which real email address should receive customer orders? Asked user; current homepage uses a .example placeholder.",
+    {
+      "id": "q-product-addition",
+      "text": "What would you like me to add to that product section?",
+      "category": "content",
+      "priority": "high",
+      "status": "resolved",
+      "resolution": "User identifies the new product in the nested SHINE THROUGH folder and requests adding it to the current shop."
+    }
   ],
   "acceptanceCriteria": [
     "Homepage makes floor lamps the primary shopping path.",
@@ -524,7 +995,16 @@
     "Homepage includes an accessible review section with clearly labeled sample content, responsive cards, and working links to related lamp categories.",
     "Shared navigation stays visible while scrolling on desktop and mobile; search, bag, mobile menu, anchors, and sticky Shop controls remain accessible.",
     "Product URLs resolve the selected lamp; gallery, quantity, saved pieces, shared bag and shop entry links work on desktop and mobile.",
-    "All pages replace checkout with email/Facebook enquiries; generated order details track bag quantities and totals; no submission or payment confirmation is shown when a contact app is opened."
+    "All pages replace checkout with email/Facebook enquiries; generated order details track bag quantities and totals; no submission or payment confirmation is shown when a contact app is opened.",
+    "Mahogany Wooden Floor Lamp appears in Shop and search at BDT 2,500; its product link, five gallery views, videos and bag quantities work on desktop and mobile while existing product links remain available.",
+    "Mahogany shop title and quick-view detail links open the imported Documents product page; desktop/mobile layout, gallery, originals, lightbox, quantity, and bag verified in Chrome.",
+    "Meet your next favourite appears above the Mahogany page footer with all three reference products; images, desktop/mobile layout and product navigation verified in Chrome.",
+    "Mahogany header matches the shared product header; the front gallery uses the generated warm-room image with responsive WebP assets while original photos remain accessible.",
+    "Gallery photo retains its natural aspect ratio, fills frame width, and has its caption below the image; verified at desktop and mobile widths.",
+    "All 16 new source photos represented across 12 product listings using the Mahogany layout and shared header/footer.",
+    "New product galleries, original-photo controls, zoom, saving, category filters, enquiry navigation and desktop/mobile layouts pass browser checks.",
+    "All 12 new products have distinct names and positive, distinct BDT prices; each product page and a two-item quantity subtotal verified in Chrome.",
+    "Mahogany shop card image frame matches neighboring cards at desktop and mobile widths; the full lamp remains visible."
   ],
   "verification": {
     "scope": "Modern Collections page and shared storefront integration",
@@ -574,7 +1054,7 @@
     "result": "No horizontal overflow, image overlap, script errors, or failed local assets; local preview returned HTTP 200",
     "verifiedAt": "2026-09-08T11:13:51+06:00"
   },
-  "updatedAt": "2026-09-09T06:50:25.462Z",
+  "updatedAt": "2026-09-14T03:23:06.245675+00:00",
   "shopFileVerification": {
     "scope": "Direct-file Shop startup repair",
     "unitTests": "npm test: 9 passed",
@@ -628,5 +1108,48 @@
     "browser": "All 8 pages: order contact step, return to bag, quantity changes reflected in message totals, clipboard success and denied-permission fallback, exact Facebook page destination, Escape, cart persistence, direct-file product preview and no script errors.",
     "responsive": "1440, 768, 390 and 320px passed with reachable contact links and no horizontal overflow; desktop and mobile screenshots reviewed.",
     "email": "Draft generation implemented and unit tested; hidden until the user supplies a real address. Removed the homepage .example placeholder. No messages sent."
+  },
+  "newProductImportVerification": {
+    "verifiedAt": "2026-09-13T06:26:44.432118+00:00",
+    "build": "npm run build passed; restored the missing optional esbuild platform package with npm install --include=optional, retaining esbuild 0.28.2.",
+    "unitTests": "npm test: 23 passed (root storefront and nested source-folder tests). Updated the minimum-price assertion and replaced order-test catalog positions with stable product IDs.",
+    "browser": {
+      "status": "passed",
+      "products": 13,
+      "widths": [
+        1440,
+        1024,
+        768,
+        390,
+        320
+      ],
+      "checks": "Shop placement, BDT price, search, filtering, quick view, product links, five WebP views and originals, lightbox focus, quantity and Facebook order totals, three playable videos, old product links, direct-file preview, keyboard focus, no local asset or script errors",
+      "screenshots": "/private/tmp/shine-product-tools/shop-import-checks"
+    },
+    "preview": "http://127.0.0.1:5503/shop.html#shop",
+    "previewNote": "The existing port 5502 preview returned empty responses; started a working preview for the current Downloads workspace on port 5503.",
+    "content": "Imported the supplied product at BDT 2,500, preserved original photos and the shade-pattern distinction, added five views and three existing videos. Product is first in the shared catalog and the default product.html#product-main view. No height, returns period, or new product claims invented."
+  },
+  "shopCardSizingVerification": {
+    "preview": "http://127.0.0.1:5502/shop.html",
+    "desktop": "1440px: first three image frames are 412.23–412.27px high",
+    "mobile": "390px: first three image frames are 216.45px high",
+    "image": "Mahogany keeps object-fit: contain and fills the shared frame height"
+  },
+  "removedProductsVerification": "Build passed; all 15 tests passed; 12 removed products absent from served search catalog, four generated bundles, and standalone product pages. 13 products remain.",
+  "squareProductImageVerification": {
+    "assets": "21 product images exported at 1080 × 1080. All five Mahogany gallery images fill their square canvases; Materials, Top, Side and Light on backgrounds extended with image generation.",
+    "browser": "13 shop images and 5 gallery thumbnails verified at 1440px and 390px. All gallery selections passed. Square 1080px video poster loads before playback.",
+    "checks": "npm run build and all 15 tests passed."
+  },
+  "mahoganyPriceAndShadeVerification": "Build and 15 tests passed. Catalog, search and both product pages show 2850; two-item cart totals 5700. Botanical working image is 1080 × 1080 and shared by gallery, editorial section and video poster. Original footage retained with alternate-pattern note.",
+  "cleanupVerification": {
+    "removedFiles": 82,
+    "removedMediaFiles": 75,
+    "savedMiB": 8.41,
+    "duplicateVideos": "No byte-identical duplicate videos found; distinct original footage preserved.",
+    "code": "Removed retired product-import pipeline and vacuous empty-catalog test; consolidated square image rules and removed obsolete Collections ratios; added npm run check and images:prepare.",
+    "verification": "npm run check, npm run build and all 14 tests passed. All 9 pages passed at 1440px and 390px with no missing local resources, broken images, script errors, overflow or non-square product frames.",
+    "remainingMediaFiles": 140
   }
 }

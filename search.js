@@ -32,7 +32,7 @@ export function initAjaxSearch({ panel, input, products, formatPrice }) {
             return response.json();
           })
           .then(data => {
-            if (!Array.isArray(data) || data.some(item => !item || typeof item.id !== 'string' || typeof item.name !== 'string' || !Number.isFinite(item.price))) throw new Error('Invalid catalog');
+            if (!Array.isArray(data) || data.some(item => !item || typeof item.id !== 'string' || typeof item.name !== 'string' || (item.price !== null && !Number.isFinite(item.price)))) throw new Error('Invalid catalog');
             return data;
           })
           .catch(error => { catalog = undefined; throw error; });

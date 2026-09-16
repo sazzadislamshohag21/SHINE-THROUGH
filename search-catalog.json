@@ -1,5 +1,23 @@
 [
   {
+    "id": "mahogany-wooden-floor-lamp",
+    "name": "Mahogany Wooden Floor Lamp",
+    "category": "Floor lamps",
+    "price": 2850,
+    "badge": "New",
+    "tone": "Mahogany wood · Botanical shade",
+    "description": "Rich mahogany, an open geometric frame, and a patterned drum shade bring a softer glow to your favourite corner.",
+    "specs": [
+      "Mahogany wood stand and frame",
+      "Patterned shade with metal support frame",
+      "Bulb included",
+      "5A cable and two-pin plug"
+    ],
+    "image": "asseats/product-squares/mahogany-wooden-floor-lamp-1080.jpg",
+    "imageFit": "contain",
+    "imageAlt": "Mahogany wooden floor lamp with a white botanical-print shade, shown in a styled home setting"
+  },
+  {
     "id": "arc-line-floor-lamp",
     "name": "Arc Line Floor Lamp",
     "category": "Floor lamps",
@@ -13,7 +31,7 @@
       "Warm LED compatible",
       "Height: 160 cm"
     ],
-    "image": "asseats/737046296_122213207996860537_6242905900036558432_n.jpg",
+    "image": "asseats/product-squares/arc-line-floor-lamp-1080.jpg",
     "imageAlt": "Modern arc floor lamp beside a soft lounge chair"
   },
   {
@@ -30,7 +48,7 @@
       "Linen shade",
       "Height: 148 cm"
     ],
-    "image": "asseats/735128642_122212889018860537_2160910607779040054_n.jpg",
+    "image": "asseats/product-squares/halo-wood-floor-lamp-1080.jpg",
     "imageAlt": "Linen shade floor lamp with a warm wooden base"
   },
   {
@@ -47,7 +65,7 @@
       "App + remote control",
       "Height: 120 cm"
     ],
-    "image": "asseats/737758793_122213205494860537_228969185351526514_n.jpg",
+    "image": "asseats/product-squares/corner-glow-smart-lamp-1080.jpg",
     "imageAlt": "Slim contemporary lamp glowing in a modern interior"
   },
   {
@@ -63,7 +81,7 @@
       "Flexible neck",
       "Touch control"
     ],
-    "image": "asseats/736689213_122212891238860537_7583314156601231015_n.jpg",
+    "image": "asseats/product-squares/readwell-gooseneck-lamp-1080.jpg",
     "imageAlt": "Adjustable reading floor lamp in a calm living room"
   },
   {
@@ -80,7 +98,7 @@
       "Adjustable shade",
       "Height: 172 cm"
     ],
-    "image": "asseats/737799923_122212889186860537_3260884086558380508_n.jpg",
+    "image": "asseats/product-squares/fold-statement-lamp-1080.jpg",
     "imageAlt": "Statement floor lamp creating a pool of light beside a sofa"
   },
   {
@@ -96,7 +114,7 @@
       "Metal frame",
       "Height: 155 cm"
     ],
-    "image": "asseats/738416469_122212889066860537_8142852148466883771_n.jpg",
+    "image": "asseats/product-squares/linen-column-floor-lamp-1080.jpg",
     "imageAlt": "Tall linen floor lamp in a neutral interior"
   },
   {
@@ -113,7 +131,7 @@
       "Cotton shade",
       "Height: 34 cm"
     ],
-    "image": "asseats/734783816_122212891154860537_895055113354639031_n.jpg",
+    "image": "asseats/product-squares/orbit-table-lamp-1080.jpg",
     "imageAlt": "Small ceramic table lamp on a wooden side table"
   },
   {
@@ -129,7 +147,7 @@
       "Adjustable cord",
       "Warm LED compatible"
     ],
-    "image": "asseats/735993902_122212891358860537_4363195970911617746_n.jpg",
+    "image": "asseats/product-squares/linea-pendant-light-1080.jpg",
     "imageAlt": "Minimal pendant light above a modern workspace"
   },
   {
@@ -145,7 +163,7 @@
       "Wall mount",
       "Warm LED compatible"
     ],
-    "image": "asseats/736921464_122212891028860537_6244703595858073197_n.jpg",
+    "image": "asseats/product-squares/soft-curve-wall-light-1080.jpg",
     "imageAlt": "Wall light casting warm light across a neutral wall"
   },
   {
@@ -162,7 +180,7 @@
       "Brushed steel",
       "Dimmable"
     ],
-    "image": "asseats/735858901_122212891322860537_5695129336991327583_n.jpg",
+    "image": "asseats/product-squares/cloud-ceiling-light-1080.jpg",
     "imageAlt": "Soft ceiling light illuminating a calm bedroom"
   },
   {
@@ -178,7 +196,7 @@
       "IP44 rated",
       "Warm LED compatible"
     ],
-    "image": "asseats/735415734_122212889354860537_8453352915285784402_n.jpg",
+    "image": "asseats/product-squares/garden-glow-outdoor-light-1080.jpg",
     "imageAlt": "Outdoor light glowing on a modern patio at dusk"
   },
   {
@@ -194,7 +212,7 @@
       "Brushed metal base",
       "Height: 38 cm"
     ],
-    "image": "asseats/745503670_122215520828860537_4771775924143394858_n.jpg",
+    "image": "asseats/product-squares/melt-glass-table-lamp-1080.jpg",
     "imageAlt": "Glass table lamp with a warm bulb on a sideboard"
   }
 ]

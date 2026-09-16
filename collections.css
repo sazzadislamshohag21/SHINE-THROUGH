@@ -72,7 +72,7 @@
 .collection-sort label { color: var(--muted); }
 .collection-sort select { max-width: 175px; min-height: 44px; padding: 8px 7px; border: 0; background: transparent; color: var(--ink); font: inherit; cursor: pointer; }
 .collections-page .product-grid { padding-top: 18px; gap: 36px 20px; }
-.collections-page .product-image-wrap { aspect-ratio: .88; }
+
 .collections-page .product-image { object-position: center; }
 .collections-page .product-info { display: block; }
 .collections-page .product-info h3 { font-size: 13px; }
@@ -157,7 +157,7 @@
   .collection-sort { gap: 3px; font-size: 10px; }
   .collection-sort select { max-width: 143px; }
   .collections-page .product-grid { gap: 28px 12px; }
-  .collections-page .product-image-wrap { aspect-ratio: .75; }
+
   .collections-page .product-info h3 { font-size: 12px; }
   .collections-page .product-prices { flex-wrap: wrap; gap: 5px; }
   .collections-page .product-prices strong { font-size: 12px; }

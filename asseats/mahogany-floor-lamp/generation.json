@@ -1,0 +1,37 @@
+{
+  "mode": "built-in image_gen",
+  "description": "Studio background retouching from supplied real photographs; originals remain in Real Product images.",
+  "images": [
+    {
+      "key": "front",
+      "source": "/Users/stackifya/Documents/SHINE THROUGH/asseats/Real Product images/WhatsApp Image 2026-09-13 at 10.34.44.jpeg",
+      "prompt": "Use case: precise-object-edit. Asset type: professional ecommerce product photograph for SHINE THROUGH. Edit the supplied real photo, preserving the exact lamp construction, wood grain, reddish mahogany varnish, proportions, shade print, wiring and bulb. Remove only the distracting room background. Use a seamless warm light stone studio background (#eeece6), soft directional studio light, true textures and gentle contact shadows. No words, logos, watermark, invented accessories or product redesign. Full length front view of the same floor lamp with small pink/green botanical white drum shade. Center entire lamp and its feet, natural white cable beside base, generous clean margin. Portrait 3:4 composition. Match this exact frame, NOT a generic tripod.",
+      "generated": "/Users/stackifya/.codex/generated_images/01a0992e-77cb-7ef3-b862-927e31e2047f/exec-597afb8c-6c5a-43d7-bf19-d909899b8375.png",
+      "correctionPrompt": "Use case: precise-object-edit. Image 1 is the EDIT TARGET, the finished studio photograph. Image 2 is a SUPPORTING reference for the exact real two-pin plug. Change ONLY the small plug lying on the floor at the bottom of image 1: it must have the same white body, narrow red terminal face and TWO ROUND brass pins as the real plug in image 2, at the existing small scale. Preserve the entire rest of image 1 unchanged: the exact lamp, white botanical drum shade, mahogany frame geometry and grain, white cable, framing, background and studio shadows. Do not bring the hand into the image. No other changes, no text. Maintain portrait 3:4 composition."
+    },
+    {
+      "key": "side",
+      "source": "/Users/stackifya/Documents/SHINE THROUGH/asseats/Real Product images/WhatsApp Image 2026-09-13 at 10.34.43 (2).jpeg",
+      "prompt": "Use case: precise-object-edit. Asset type: professional ecommerce product photograph for SHINE THROUGH. Edit the supplied real photo, preserving the exact lamp construction, wood grain, reddish mahogany varnish, proportions, shade print, wiring and bulb. Remove only the distracting room background. Use a seamless warm light stone studio background (#eeece6), soft directional studio light, true textures and gentle contact shadows. No words, logos, watermark, invented accessories or product redesign. Full length side/three-quarter view from exactly this photograph. Preserve the crossed angular mahogany frame and tiny botanical sprig shade. Entire lamp fits, including feet and shade, centered in portrait 3:4 composition.",
+      "generated": "/Users/stackifya/.codex/generated_images/01a0992e-77cb-7ef3-b862-927e31e2047f/exec-8b2d48eb-e79c-4f9c-9cd8-df1c930cf6e5.png"
+    },
+    {
+      "key": "materials",
+      "source": "/Users/stackifya/Documents/SHINE THROUGH/asseats/Real Product images/WhatsApp Image 2026-09-13 at 10.34.46.jpeg",
+      "prompt": "Use case: precise-object-edit. Asset type: professional ecommerce product photograph for SHINE THROUGH. Edit the supplied real photo, preserving the exact lamp construction, wood grain, reddish mahogany varnish, proportions, shade print, wiring and bulb. Remove only the distracting room background. Use a seamless warm light stone studio background (#eeece6), soft directional studio light, true textures and gentle contact shadows. No words, logos, watermark, invented accessories or product redesign. A close material view of exactly these angled polished mahogany frame rails. Preserve every wood surface and grain, replace only visible background gaps with soft stone studio backdrop. Portrait 3:4 composition. Rich natural wood, not oversaturated.",
+      "generated": "/Users/stackifya/.codex/generated_images/01a0992e-77cb-7ef3-b862-927e31e2047f/exec-3e097931-0c2a-4122-b0b2-5453190c8762.png"
+    },
+    {
+      "key": "top",
+      "source": "/Users/stackifya/Documents/SHINE THROUGH/asseats/Real Product images/WhatsApp Image 2026-09-13 at 10.34.44 (2).jpeg",
+      "prompt": "Use case: precise-object-edit. Asset type: professional ecommerce product photograph for SHINE THROUGH. Edit the supplied real photo, preserving the exact lamp construction, wood grain, reddish mahogany varnish, proportions, shade print, wiring and bulb. Remove only the distracting room background. Use a seamless warm light stone studio background (#eeece6), soft directional studio light, true textures and gentle contact shadows. No words, logos, watermark, invented accessories or product redesign. Preserve exactly the top-down close view inside the botanical drum shade, the one white bulb in its holder and the thin metal shade frame supports. Replace the room glimpsed through openings with a neutral stone studio surface, clarify exposure. Portrait 3:4 composition. Do not invent extra wires, bulbs, or supports.",
+      "generated": "/Users/stackifya/.codex/generated_images/01a0992e-77cb-7ef3-b862-927e31e2047f/exec-33d6e466-1081-4016-b0df-3664d1575b0e.png"
+    },
+    {
+      "key": "working",
+      "source": "/Users/stackifya/Documents/SHINE THROUGH/asseats/Real Product images/WhatsApp Image 2026-09-13 at 10.34.47.jpeg",
+      "prompt": "Use case: precise-object-edit. Asset type: professional ecommerce product photograph for SHINE THROUGH. Edit the supplied real photo, preserving the exact lamp construction, wood grain, reddish mahogany varnish, proportions, shade print, wiring and bulb. Remove only the distracting room background. Use a seamless warm light stone studio background (#eeece6), soft directional studio light, true textures and gentle contact shadows. No words, logos, watermark, invented accessories or product redesign. Preserve the full length illuminated lamp with this LARGE multicolor tropical leaf-print shade and crossed mahogany frame. Remove curtains, wall hanging, sofa, outlets. Replace with a simple warm taupe studio corner at evening with the existing soft light pool on the wall. Keep glow realistic, no extra light source. Portrait 3:4, whole lamp visible including base. Preserve large leaf shade as photographed.",
+      "generated": "/Users/stackifya/.codex/generated_images/01a0992e-77cb-7ef3-b862-927e31e2047f/exec-5665d4af-25bc-4df2-9352-6803e4211500.png"
+    }
+  ]
+}

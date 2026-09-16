@@ -20,7 +20,8 @@ test('saved and new edits intersect and sorting does not mutate featured order',
   assert.deepEqual(getShopProducts(PRODUCTS, { ...SHOP_DEFAULTS, edit: 'saved', category: 'Table lamps' }, saved).map(p => p.id), ['orbit-table-lamp']);
   assert.ok(getShopProducts(PRODUCTS, { ...SHOP_DEFAULTS, edit: 'new' }).every(p => p.badge === 'New'));
   const sorted = getShopProducts(PRODUCTS, { ...SHOP_DEFAULTS, sort: 'price-ascending' });
-  assert.equal(sorted[0].price, 2780);
+  assert.equal(sorted[0].price, Math.min(...PRODUCTS.filter(p=>p.price!==null).map(p=>p.price)));
+  assert.equal(sorted.filter(p => p.price !== null).at(-1).price, 8970);
   assert.equal(sorted.at(-1).price, 8970);
   assert.deepEqual(getShopProducts(PRODUCTS).map(p => p.id), original);
 });

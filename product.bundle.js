@@ -30,7 +30,7 @@
           if (!response.ok) throw new Error("Catalog unavailable");
           return response.json();
         }).then((data) => {
-          if (!Array.isArray(data) || data.some((item) => !item || typeof item.id !== "string" || typeof item.name !== "string" || !Number.isFinite(item.price))) throw new Error("Invalid catalog");
+          if (!Array.isArray(data) || data.some((item) => !item || typeof item.id !== "string" || typeof item.name !== "string" || item.price !== null && !Number.isFinite(item.price))) throw new Error("Invalid catalog");
           return data;
         }).catch((error) => {
           catalog = void 0;
@@ -190,6 +190,19 @@
   // app.js
   var PRODUCTS = [
     {
+      id: "mahogany-wooden-floor-lamp",
+      name: "Mahogany Wooden Floor Lamp",
+      category: "Floor lamps",
+      price: 2850,
+      badge: "New",
+      tone: "Mahogany wood \xB7 Botanical shade",
+      description: "Rich mahogany, an open geometric frame, and a patterned drum shade bring a softer glow to your favourite corner.",
+      specs: ["Mahogany wood stand and frame", "Patterned shade with metal support frame", "Bulb included", "5A cable and two-pin plug"],
+      image: "asseats/product-squares/mahogany-wooden-floor-lamp-1080.jpg",
+      imageFit: "contain",
+      imageAlt: "Mahogany wooden floor lamp with a white botanical-print shade, shown in a styled home setting"
+    },
+    {
       id: "arc-line-floor-lamp",
       name: "Arc Line Floor Lamp",
       category: "Floor lamps",
@@ -199,7 +212,7 @@
       tone: "Matte black steel",
       description: "A sculptural arc that brings warm, focused light to reading corners.",
       specs: ["Matte black steel", "Warm LED compatible", "Height: 160 cm"],
-      image: "asseats/737046296_122213207996860537_6242905900036558432_n.jpg",
+      image: "asseats/product-squares/arc-line-floor-lamp-1080.jpg",
       imageAlt: "Modern arc floor lamp beside a soft lounge chair"
     },
     {
@@ -212,7 +225,7 @@
       tone: "Oak & linen",
       description: "Soft linen diffusion and a warm oak base for slow evenings at home.",
       specs: ["Natural oak", "Linen shade", "Height: 148 cm"],
-      image: "asseats/735128642_122212889018860537_2160910607779040054_n.jpg",
+      image: "asseats/product-squares/halo-wood-floor-lamp-1080.jpg",
       imageAlt: "Linen shade floor lamp with a warm wooden base"
     },
     {
@@ -225,7 +238,7 @@
       tone: "RGB LED",
       description: "A slim corner silhouette with app-controlled color for living rooms and gaming spaces.",
       specs: ["RGB LED", "App + remote control", "Height: 120 cm"],
-      image: "asseats/737758793_122213205494860537_228969185351526514_n.jpg",
+      image: "asseats/product-squares/corner-glow-smart-lamp-1080.jpg",
       imageAlt: "Slim contemporary lamp glowing in a modern interior"
     },
     {
@@ -237,7 +250,7 @@
       tone: "Warm white LED",
       description: "A flexible reading light that keeps the glow exactly where you need it.",
       specs: ["Dimmable LED", "Flexible neck", "Touch control"],
-      image: "asseats/736689213_122212891238860537_7583314156601231015_n.jpg",
+      image: "asseats/product-squares/readwell-gooseneck-lamp-1080.jpg",
       imageAlt: "Adjustable reading floor lamp in a calm living room"
     },
     {
@@ -250,7 +263,7 @@
       tone: "Powder-coated black",
       description: "An architectural profile designed to anchor a quiet, considered room.",
       specs: ["Powder-coated steel", "Adjustable shade", "Height: 172 cm"],
-      image: "asseats/737799923_122212889186860537_3260884086558380508_n.jpg",
+      image: "asseats/product-squares/fold-statement-lamp-1080.jpg",
       imageAlt: "Statement floor lamp creating a pool of light beside a sofa"
     },
     {
@@ -262,7 +275,7 @@
       tone: "Stone linen",
       description: "A tall, tonal shade for ambient light that feels easy from morning to night.",
       specs: ["Stone linen", "Metal frame", "Height: 155 cm"],
-      image: "asseats/738416469_122212889066860537_8142852148466883771_n.jpg",
+      image: "asseats/product-squares/linen-column-floor-lamp-1080.jpg",
       imageAlt: "Tall linen floor lamp in a neutral interior"
     },
     {
@@ -275,7 +288,7 @@
       tone: "Stone ceramic",
       description: "A compact ceramic glow for bedside tables, consoles, and small shelves.",
       specs: ["Stone ceramic", "Cotton shade", "Height: 34 cm"],
-      image: "asseats/734783816_122212891154860537_895055113354639031_n.jpg",
+      image: "asseats/product-squares/orbit-table-lamp-1080.jpg",
       imageAlt: "Small ceramic table lamp on a wooden side table"
     },
     {
@@ -287,7 +300,7 @@
       tone: "Matte black",
       description: "A simple pendant with a graphic profile for dining tables and kitchen islands.",
       specs: ["Matte black metal", "Adjustable cord", "Warm LED compatible"],
-      image: "asseats/735993902_122212891358860537_4363195970911617746_n.jpg",
+      image: "asseats/product-squares/linea-pendant-light-1080.jpg",
       imageAlt: "Minimal pendant light above a modern workspace"
     },
     {
@@ -299,7 +312,7 @@
       tone: "Brushed brass",
       description: "A compact wall light that turns hallways and bedside corners into warm pauses.",
       specs: ["Brushed brass", "Wall mount", "Warm LED compatible"],
-      image: "asseats/736921464_122212891028860537_6244703595858073197_n.jpg",
+      image: "asseats/product-squares/soft-curve-wall-light-1080.jpg",
       imageAlt: "Wall light casting warm light across a neutral wall"
     },
     {
@@ -312,7 +325,7 @@
       tone: "Opal glass",
       description: "A softly rounded ceiling light that spreads an even, comfortable glow.",
       specs: ["Opal glass", "Brushed steel", "Dimmable"],
-      image: "asseats/735858901_122212891322860537_5695129336991327583_n.jpg",
+      image: "asseats/product-squares/cloud-ceiling-light-1080.jpg",
       imageAlt: "Soft ceiling light illuminating a calm bedroom"
     },
     {
@@ -324,7 +337,7 @@
       tone: "Graphite aluminium",
       description: "A low, durable light for balconies, patios, and late dinners outside.",
       specs: ["Graphite aluminium", "IP44 rated", "Warm LED compatible"],
-      image: "asseats/735415734_122212889354860537_8453352915285784402_n.jpg",
+      image: "asseats/product-squares/garden-glow-outdoor-light-1080.jpg",
       imageAlt: "Outdoor light glowing on a modern patio at dusk"
     },
     {
@@ -336,19 +349,20 @@
       tone: "Smoke glass",
       description: "A translucent glass form that makes a desk, console, or bedside glow feel special.",
       specs: ["Smoke glass", "Brushed metal base", "Height: 38 cm"],
-      image: "asseats/745503670_122215520828860537_4771775924143394858_n.jpg",
+      image: "asseats/product-squares/melt-glass-table-lamp-1080.jpg",
       imageAlt: "Glass table lamp with a warm bulb on a sideboard"
     }
   ];
   var CATEGORIES = [
-    { name: "Floor lamps", note: "The hero edit", image: PRODUCTS[0].image },
-    { name: "Table lamps", note: "Small, warm glow", image: PRODUCTS[6].image },
-    { name: "Pendant lights", note: "Room-defining forms", image: PRODUCTS[7].image },
-    { name: "Wall lights", note: "Soft accent light", image: PRODUCTS[8].image },
-    { name: "Ceiling lights", note: "Even illumination", image: PRODUCTS[9].image },
-    { name: "Outdoor lighting", note: "After-dark living", image: PRODUCTS[10].image }
-  ];
+    { name: "Floor lamps", note: "The hero edit" },
+    { name: "Table lamps", note: "Small, warm glow" },
+    { name: "Pendant lights", note: "Room-defining forms" },
+    { name: "Wall lights", note: "Soft accent light" },
+    { name: "Ceiling lights", note: "Even illumination" },
+    { name: "Outdoor lighting", note: "After-dark living" }
+  ].map((category) => ({ ...category, image: PRODUCTS.find((product) => product.category === category.name).image }));
   function formatBDT(value) {
+    if (value === null) return "Price on request";
     return `\u09F3 ${new Intl.NumberFormat("en-BD", { maximumFractionDigits: 0 }).format(Number(value) || 0)}`;
   }
   function filterProducts(products, category = "All lamps") {
@@ -418,15 +432,15 @@
     return `
     <article class="product-card">
       <div class="product-image-wrap">
-        <a href="product.html?id=${product.id}" aria-label="View ${product.name}"><img class="product-image" src="${product.image}" alt="${product.imageAlt}" loading="lazy" /></a>
+        <a href="${product.page || `product.html?id=${product.id}`}" aria-label="View ${product.name}"><img class="product-image${product.imageFit === "contain" ? " product-image-contained" : ""}" src="${product.image}" alt="${product.imageAlt}" loading="lazy" /></a>
         <span class="product-badge">${product.badge}</span>
         <button class="wishlist-button" type="button" aria-label="Save ${product.name}">${icon("heart")}</button>
-        <button class="quick-add" type="button" data-add-to-cart="${product.id}">Add to bag ${icon("arrow")}</button>
+        <button class="quick-add" type="button" data-add-to-cart="${product.id}">${product.price === null ? "Enquire" : "Add to bag"} ${icon("arrow")}</button>
       </div>
       <div class="product-info">
         <div>
           <p class="product-category">${product.category}</p>
-          <h3><a href="product.html?id=${product.id}">${product.name}</a></h3>
+          <h3><a href="${product.page || `product.html?id=${product.id}`}">${product.name}</a></h3>
         </div>
         <div class="product-prices">
           <strong>${formatBDT(product.price)}</strong>
@@ -648,6 +662,11 @@
       }
       const addButton = event.target.closest("[data-add-to-cart]");
       if (addButton) {
+        const selectedProduct = PRODUCTS.find((p) => p.id === addButton.dataset.addToCart);
+        if (selectedProduct?.price === null) {
+          location.href = selectedProduct.page;
+          return;
+        }
         cart = addToCart(cart, addButton.dataset.addToCart, addButton.dataset.addQuantity);
         saveCart(cart);
         renderCart();
@@ -777,32 +796,57 @@
     });
   }
 
+  // product-media.js
+  var base = "asseats/mahogany-floor-lamp/";
+  var originals = "asseats/Real Product images/WhatsApp Image 2026-09-13 at ";
+  var PRODUCT_MEDIA = {
+    "mahogany-wooden-floor-lamp": {
+      note: "Shown with the small botanical-print shade. Original demonstration footage shows an alternate leaf-print shade.",
+      views: [
+        { key: "front", title: "Front view", file: "10.34.44.jpeg", alt: "Front view of the mahogany floor lamp with the small botanical-print shade" },
+        { key: "materials", title: "Material close-up", file: "10.34.46.jpeg", alt: "Close-up of the grain and polished finish on the mahogany frame" },
+        { key: "top", title: "Top view", file: "10.34.44 (2).jpeg", alt: "Top view inside the shade showing the included bulb and metal support frame" },
+        { key: "side", title: "Side view", file: "10.34.43 (2).jpeg", alt: "Side view of the angular mahogany floor lamp with the small botanical-print shade" },
+        { key: "working", title: "Light on", file: "10.34.47.jpeg", alt: "Illuminated mahogany floor lamp with the small botanical-print shade" }
+      ].map((view) => ({ ...view, image: view.key === "front" ? "asseats/product-squares/mahogany-wooden-floor-lamp-1080.jpg" : `asseats/product-squares/mahogany-${view.key}-1080.jpg`, thumbnail: view.key === "front" ? "asseats/product-squares/mahogany-wooden-floor-lamp-1080.jpg" : `asseats/product-squares/mahogany-${view.key}-1080.jpg`, original: originals + view.file })),
+      videos: [
+        { title: "The lamp, illuminated", kind: "Real product footage", file: "video-working.mp4", poster: "video-working.webp", description: "The actual lamp glowing through the larger leaf-print shade, with a close view of the wooden frame and light on the wall." },
+        { title: "Bulb & shade, up close", kind: "Real product footage", file: "video-bulb.mp4", poster: "video-bulb.webp", description: "A closer look inside the shade at the included bulb and its metal support frame." },
+        { title: "A corner, transformed", kind: "Product advertisement", file: "video-film.mp4", poster: "video-film.webp", description: "A short product advertisement showing the lamp in a room setting." }
+      ].map((video) => ({ ...video, src: base + video.file, poster: { "video-working.webp": "asseats/product-squares/mahogany-working-1080.jpg", "video-bulb.webp": "asseats/product-squares/mahogany-top-1080.jpg", "video-film.webp": "asseats/product-squares/mahogany-wooden-floor-lamp-1080.jpg" }[video.poster] }))
+    }
+  };
+
   // product-content.js
-  var DEFAULT_PRODUCT_ID = "halo-wood-floor-lamp";
+  var DEFAULT_PRODUCT_ID = "mahogany-wooden-floor-lamp";
   var productURL = (id) => `product.html?id=${encodeURIComponent(id)}`;
   var arrow = '<span aria-hidden="true">\u2197</span>';
   var heart = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M20.8 8.8c0 5.2-8.8 10-8.8 10s-8.8-4.8-8.8-10A4.8 4.8 0 0 1 12 6.1a4.8 4.8 0 0 1 8.8 2.7Z"/></svg>';
   function renderProductPage(product) {
     if (!product) return '<section class="pd-missing section-shell"><p class="eyebrow">A different light awaits</p><h1>Piece not found.</h1><p>This product link is unavailable. Explore the shop to find your next light.</p><a class="button button-dark" href="shop.html">Explore all lighting \u2197</a></section>';
     const p = product;
-    const halo = p.id === DEFAULT_PRODUCT_ID;
+    const halo = p.id === "halo-wood-floor-lamp";
+    const media = PRODUCT_MEDIA[p.id];
     const categoryURL = `shop.html?${new URLSearchParams({ category: p.category })}#shop`;
     const title = p.name.replace(/(Floor Lamp|Table Lamp|Smart Lamp|Gooseneck Lamp|Statement Lamp|Pendant Light|Wall Light|Ceiling Light|Outdoor Light)$/, "<em>$1</em>");
-    const views = halo ? ["In the room", "Shade detail", "Base detail"] : ["In the room", "A closer look"];
+    const views = media?.views ?? (halo ? ["In the room", "Shade detail", "Base detail"] : ["In the room", "A closer look"]).map((title2) => ({ title: title2, image: p.image, thumbnail: p.image, alt: p.imageAlt }));
+    const mainView = views[0];
     const related = PRODUCTS.filter((item) => item.id !== p.id).sort((a, b) => Number(b.category === p.category) - Number(a.category === p.category)).slice(0, 3);
     return `
     <nav class="pd-breadcrumbs section-shell" aria-label="Breadcrumb"><a href="index.html">Home</a><span>/</span><a href="${categoryURL}">${p.category}</a><span>/</span><span aria-current="page">${p.name}</span></nav>
-    <section class="pd-hero section-shell" aria-labelledby="product-title">
-      <div class="pd-gallery" data-gallery data-halo="${halo}">
-        <button class="pd-main-photo" type="button" data-open-image aria-label="Enlarge product photograph"><img src="${p.image}" alt="${p.imageAlt}" width="1122" height="1402" fetchpriority="high" data-main-image /><span class="pd-photo-tag">${p.badge}</span><span class="pd-expand" aria-hidden="true">\u2197</span></button>
-        <div class="pd-gallery-bottom"><div class="pd-thumbnails" role="group" aria-label="Product photograph views">${views.map((label, i) => `<button type="button" class="pd-thumbnail" data-photo-view="${i}" aria-pressed="${i === 0}" aria-label="${label}"><img src="${p.image}" alt="" width="66" height="76" /></button>`).join("")}</div><p><span data-view-caption aria-live="polite">${views[0]}</span><span class="pd-photo-count" data-photo-count>01 / 0${views.length}</span></p></div>
+    <section class="pd-hero section-shell" id="product-main" aria-labelledby="product-title">
+      <div class="pd-gallery" data-gallery data-halo="${halo}" data-photographs="${Boolean(media)}">
+        <button class="pd-main-photo" type="button" data-open-image aria-label="Enlarge product photograph"><img src="${mainView.image}" alt="${mainView.alt}${media ? "; studio-retouched product photograph" : ""}" width="1122" height="1402" fetchpriority="high" data-main-image /><span class="pd-photo-tag">${p.badge}</span><span class="pd-expand" aria-hidden="true">\u2197</span></button>
+        <div class="pd-gallery-bottom"><div class="pd-thumbnails" role="group" aria-label="Product photograph views">${views.map((view, i) => `<button type="button" class="pd-thumbnail" data-photo-view="${i}" aria-pressed="${i === 0}" aria-label="${view.title}"><img src="${view.thumbnail}" alt="" width="66" height="76" /></button>`).join("")}</div><p><span data-view-caption aria-live="polite">${mainView.title}</span><span class="pd-photo-count" data-photo-count>01 / 0${views.length}</span></p></div>
+        ${media ? '<div class="pd-media-note"><p data-image-source>Studio images based on our real product photos.</p><button type="button" class="text-link" data-original-toggle aria-pressed="false">View originals</button></div>' : ""}
       </div>
       <div class="pd-copy">
         <div class="pd-heading-top"><p class="eyebrow">The ${p.category.toLowerCase()} edit</p><button class="pd-save" type="button" data-save-piece aria-pressed="false" aria-label="Save ${p.name}">${heart}</button></div>
         <h1 id="product-title">${title}</h1>
         <div class="pd-price"><strong>${formatBDT(p.price)}</strong>${p.compareAt > p.price ? `<del>${formatBDT(p.compareAt)}</del><span>Save ${formatBDT(p.compareAt - p.price)}</span>` : ""}</div>
         <p class="pd-description">${p.description}</p>
-        <div class="pd-finish"><span class="pd-small-label">Finish</span><div><span class="pd-swatch${halo ? " pd-swatch-wood" : ""}" aria-hidden="true"></span><span>${p.tone}</span></div><a href="#product-details">See the details ${arrow}</a></div>
+        <div class="pd-finish"><span class="pd-small-label">Finish</span><div><span class="pd-swatch${halo || media ? " pd-swatch-wood" : ""}" aria-hidden="true"></span><span>${p.tone}</span></div><a href="#product-details">See the details ${arrow}</a></div>
+        ${media ? `<p class="pd-shade-note">${media.note}</p>` : ""}
         <div class="pd-purchase" data-purchase><label class="pd-small-label" for="product-quantity">Quantity</label><div class="pd-purchase-row"><div class="pd-quantity"><button type="button" data-quantity-step="-1" aria-label="Decrease quantity" disabled>\u2212</button><input id="product-quantity" type="number" min="1" max="99" step="1" value="1" inputmode="numeric" /><button type="button" data-quantity-step="1" aria-label="Increase quantity">+</button></div><button class="button button-dark pd-add" type="button" data-add-to-cart="${p.id}" data-add-quantity="1" data-open-bag>Add to bag <span aria-hidden="true">\u2197</span></button></div></div>
         <p class="pd-order-note">Add your favourites to the bag, then send your order enquiry by ${ORDER_CHANNELS}.</p>
         <div class="pd-delivery"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true"><path d="M3 5h11v12H3zM14 10h4l3 4v3h-7M4 9h6"/><circle cx="7" cy="18" r="2"/><circle cx="18" cy="18" r="2"/></svg><p>Delivery across Bangladesh<span>Delivery charges confirmed when you enquire.</span></p></div>
@@ -811,15 +855,20 @@
       </div>
     </section>
     <section class="pd-story section-shell" aria-labelledby="pd-story-title"><div class="pd-story-copy"><p class="eyebrow">More than a finishing touch</p><h2 id="pd-story-title">Your corner.<br />A whole new <em>feeling.</em></h2><p>A favourite spot, made a little more inviting. Let the light sit alongside the things you love, and give everyday moments a place to unfold.</p><a class="text-link" href="approach.html">The way we see light ${arrow}</a><div class="pd-story-signoff"><span aria-hidden="true">\u2733</span><span>Considered forms.<br />Everyday atmosphere.</span></div></div><figure class="pd-story-visual"><img src="${p.image}" alt="${p.imageAlt}" loading="lazy" width="1122" height="1402" /><figcaption><span>Room for a little glow.</span><span>SHINE THROUGH / ${p.category}</span></figcaption></figure></section>
-    <section class="pd-related section-shell" aria-labelledby="pd-related-title"><div class="pd-section-heading"><div><p class="eyebrow">Keep the feeling going</p><h2 id="pd-related-title">Meet your next <em>favourite.</em></h2></div><a class="text-link" href="${categoryURL}">Explore ${p.category.toLowerCase()} ${arrow}</a></div><div class="pd-related-grid">${related.map((item) => `<article class="pd-related-card"><a class="pd-related-photo" href="${productURL(item.id)}"><img src="${item.image}" alt="${item.imageAlt}" loading="lazy" width="540" height="650" /><span>${item.badge}</span><b aria-hidden="true">\u2197</b></a><p class="pd-small-label">${item.category}</p><h3><a href="${productURL(item.id)}">${item.name}</a></h3><div><span>${item.tone}</span><strong>${formatBDT(item.price)}</strong></div></article>`).join("")}</div></section>
+    <section class="pd-related section-shell" aria-labelledby="pd-related-title"><div class="pd-section-heading"><div><p class="eyebrow">Keep the feeling going</p><h2 id="pd-related-title">Meet your next <em>favourite.</em></h2></div><a class="text-link" href="${categoryURL}">Explore ${p.category.toLowerCase()} ${arrow}</a></div><div class="pd-related-grid">${related.map((item) => `<article class="pd-related-card"><a class="pd-related-photo" href="${productURL(item.id)}"><img class="${item.imageFit === "contain" ? "product-image-contained" : ""}" src="${item.image}" alt="${item.imageAlt}" loading="lazy" width="540" height="650" /><span>${item.badge}</span><b aria-hidden="true">\u2197</b></a><p class="pd-small-label">${item.category}</p><h3><a href="${productURL(item.id)}">${item.name}</a></h3><div><span>${item.tone}</span><strong>${formatBDT(item.price)}</strong></div></article>`).join("")}</div></section>
+    ${media ? `<section class="pd-videos section-shell" aria-labelledby="pd-videos-title"><div class="pd-section-heading"><div><p class="eyebrow">The lamp, in motion</p><h2 id="pd-videos-title">See the details.<br />Feel the <em>difference.</em></h2></div><p>Take a closer look at the real lamp,<br />then explore our short product film.</p></div><div class="pd-video-layout"><video controls playsinline preload="none" poster="${media.videos[0].poster}" src="${media.videos[0].src}" aria-label="${media.videos[0].title}" aria-describedby="pd-video-description" data-product-video>Your browser does not support embedded video. <a href="${media.videos[0].src}" data-video-fallback>Open the product video</a>.</video><div class="pd-video-choices" role="group" aria-label="Choose a product video">${media.videos.map((video, i) => `<button type="button" data-product-film="${i}" aria-pressed="${i === 0}"><img src="${video.poster}" alt="" loading="lazy" width="100" height="100" /><span><small>${video.kind}</small><strong>${video.title}</strong></span><span aria-hidden="true">\u25B6</span></button>`).join("")}</div></div><div class="pd-video-caption"><p id="pd-video-description" data-video-description>${media.videos[0].description}</p><a class="text-link" href="${media.videos[0].src}" target="_blank" rel="noopener noreferrer" data-video-link>Open video ${arrow}</a></div></section>` : ""}
     <div class="pd-sticky" data-sticky-purchase hidden><div class="section-shell"><div><span>${p.name}</span><strong>${formatBDT(p.price)}</strong></div><button class="button button-dark" type="button" data-add-to-cart="${p.id}" data-add-quantity="1" data-open-bag>Add to bag <span aria-hidden="true">\u2197</span></button></div></div>
-    <dialog class="pd-lightbox" data-image-dialog aria-label="Enlarged product photograph"><button class="pd-lightbox-close" type="button" data-close-image aria-label="Close enlarged photograph">\xD7</button><img src="${p.image}" alt="${p.imageAlt}" width="1122" height="1402" /></dialog>`;
+    <dialog class="pd-lightbox" data-image-dialog aria-label="Enlarged product photograph"><button class="pd-lightbox-close" type="button" data-close-image aria-label="Close enlarged photograph">\xD7</button><img src="${mainView.image}" alt="${mainView.alt}" width="1122" height="1402" /></dialog>`;
   }
 
   // product.js
   document.addEventListener("DOMContentLoaded", () => {
     const id = new URLSearchParams(location.search).get("id") ?? DEFAULT_PRODUCT_ID;
     const product = PRODUCTS.find((p) => p.id === id);
+    if (product?.page) {
+      location.replace(product.page);
+      return;
+    }
     document.querySelector("#main").innerHTML = renderProductPage(product);
     document.title = `${product?.name || "Piece not found"} \u2014 SHINE THROUGH`;
     if (product) document.querySelector('meta[name="description"]').content = product.description;
@@ -840,12 +889,48 @@
       syncQuantity();
     }));
     const gallery = document.querySelector("[data-gallery]");
+    const media = PRODUCT_MEDIA[id];
+    let currentView = 0;
+    let showOriginal = false;
+    const syncPhotograph = () => {
+      if (!media) return;
+      const view = media.views[currentView];
+      const src = showOriginal ? view.original : view.image;
+      const alt = `${view.alt}; ${showOriginal ? "original product photograph" : "studio-retouched product photograph"}`;
+      document.querySelectorAll("[data-main-image], [data-image-dialog] > img").forEach((image) => {
+        image.src = src;
+        image.alt = alt;
+      });
+    };
     const thumbnails = [...document.querySelectorAll("[data-photo-view]")];
     thumbnails.forEach((button) => button.addEventListener("click", () => {
       gallery.dataset.view = button.dataset.photoView;
+      currentView = Number(button.dataset.photoView);
+      syncPhotograph();
       thumbnails.forEach((item) => item.setAttribute("aria-pressed", String(item === button)));
       document.querySelector("[data-view-caption]").textContent = button.getAttribute("aria-label");
       document.querySelector("[data-photo-count]").textContent = `0${Number(button.dataset.photoView) + 1} / 0${thumbnails.length}`;
+    }));
+    document.querySelector("[data-original-toggle]")?.addEventListener("click", (event) => {
+      showOriginal = !showOriginal;
+      event.currentTarget.setAttribute("aria-pressed", String(showOriginal));
+      event.currentTarget.textContent = showOriginal ? "View studio images" : "View originals";
+      document.querySelector("[data-image-source]").textContent = showOriginal ? "Original product photographs." : "Studio images based on our real product photos.";
+      syncPhotograph();
+    });
+    document.querySelectorAll("[data-product-film]").forEach((button) => button.addEventListener("click", () => {
+      const film = media.videos[Number(button.dataset.productFilm)];
+      const video = document.querySelector("[data-product-video]");
+      video.pause();
+      video.src = film.src;
+      video.poster = film.poster;
+      video.setAttribute("aria-label", film.title);
+      document.querySelector("[data-video-description]").textContent = film.description;
+      document.querySelectorAll("[data-video-link], [data-video-fallback]").forEach((link) => {
+        link.href = film.src;
+      });
+      document.querySelectorAll("[data-product-film]").forEach((item) => item.setAttribute("aria-pressed", String(item === button)));
+      video.load();
     }));
     const dialog = document.querySelector("[data-image-dialog]");
     document.querySelector("[data-open-image]").addEventListener("click", () => {

@@ -1,0 +1,415 @@
+{
+  "removed": [
+    {
+      "path": "new-products.js",
+      "reason": "Retired unused import pipeline or redundant wrapper",
+      "bytes": 106
+    },
+    {
+      "path": "new-product.js",
+      "reason": "Retired unused import pipeline or redundant wrapper",
+      "bytes": 3267
+    },
+    {
+      "path": "new-product-template.js",
+      "reason": "Retired unused import pipeline or redundant wrapper",
+      "bytes": 7038
+    },
+    {
+      "path": "new-product.bundle.js",
+      "reason": "Retired unused import pipeline or redundant wrapper",
+      "bytes": 4060
+    },
+    {
+      "path": "scripts/build-new-products.mjs",
+      "reason": "Retired unused import pipeline or redundant wrapper",
+      "bytes": 1271
+    },
+    {
+      "path": "tests/new-products.test.mjs",
+      "reason": "Retired unused import pipeline or redundant wrapper",
+      "bytes": 1393
+    },
+    {
+      "path": "scripts/prepare-product-images.py",
+      "reason": "Retired unused import pipeline or redundant wrapper",
+      "bytes": 236
+    },
+    {
+      "path": "asseats/new-products/photo-16-1086.webp",
+      "reason": "Obsolete generated export of a removed product",
+      "bytes": 138918
+    },
+    {
+      "path": "asseats/new-products/photo-02-1086.webp",
+      "reason": "Obsolete generated export of a removed product",
+      "bytes": 75272
+    },
+    {
+      "path": "asseats/new-products/photo-16-720.webp",
+      "reason": "Obsolete generated export of a removed product",
+      "bytes": 70656
+    },
+    {
+      "path": "asseats/new-products/photo-07-360.webp",
+      "reason": "Obsolete generated export of a removed product",
+      "bytes": 18206
+    },
+    {
+      "path": "asseats/new-products/photo-06-360.webp",
+      "reason": "Obsolete generated export of a removed product",
+      "bytes": 28226
+    },
+    {
+      "path": "asseats/new-products/photo-01-720.webp",
+      "reason": "Obsolete generated export of a removed product",
+      "bytes": 53336
+    },
+    {
+      "path": "asseats/new-products/photo-10-1086.webp",
+      "reason": "Obsolete generated export of a removed product",
+      "bytes": 143312
+    },
+    {
+      "path": "asseats/new-products/photo-04-1086.webp",
+      "reason": "Obsolete generated export of a removed product",
+      "bytes": 124330
+    },
+    {
+      "path": "asseats/new-products/photo-10-360.webp",
+      "reason": "Obsolete generated export of a removed product",
+      "bytes": 21120
+    },
+    {
+      "path": "asseats/new-products/photo-11-360.webp",
+      "reason": "Obsolete generated export of a removed product",
+      "bytes": 25242
+    },
+    {
+      "path": "asseats/new-products/photo-09-1086.webp",
+      "reason": "Obsolete generated export of a removed product",
+      "bytes": 111976
+    },
+    {
+      "path": "asseats/new-products/photo-03-1086.webp",
+      "reason": "Obsolete generated export of a removed product",
+      "bytes": 85920
+    },
+    {
+      "path": "asseats/new-products/photo-07-720.webp",
+      "reason": "Obsolete generated export of a removed product",
+      "bytes": 64936
+    },
+    {
+      "path": "asseats/new-products/photo-06-720.webp",
+      "reason": "Obsolete generated export of a removed product",
+      "bytes": 86460
+    },
+    {
+      "path": "asseats/new-products/photo-16-360.webp",
+      "reason": "Obsolete generated export of a removed product",
+      "bytes": 18466
+    },
+    {
+      "path": "asseats/new-products/photo-10-720.webp",
+      "reason": "Obsolete generated export of a removed product",
+      "bytes": 74718
+    },
+    {
+      "path": "asseats/new-products/photo-11-720.webp",
+      "reason": "Obsolete generated export of a removed product",
+      "bytes": 91010
+    },
+    {
+      "path": "asseats/new-products/photo-05-1086.webp",
+      "reason": "Obsolete generated export of a removed product",
+      "bytes": 112196
+    },
+    {
+      "path": "asseats/new-products/photo-11-1086.webp",
+      "reason": "Obsolete generated export of a removed product",
+      "bytes": 166368
+    },
+    {
+      "path": "asseats/new-products/photo-01-360.webp",
+      "reason": "Obsolete generated export of a removed product",
+      "bytes": 19294
+    },
+    {
+      "path": "asseats/new-products/photo-08-1086.webp",
+      "reason": "Obsolete generated export of a removed product",
+      "bytes": 174478
+    },
+    {
+      "path": "asseats/new-products/photo-13-360.webp",
+      "reason": "Obsolete generated export of a removed product",
+      "bytes": 21118
+    },
+    {
+      "path": "asseats/new-products/photo-12-360.webp",
+      "reason": "Obsolete generated export of a removed product",
+      "bytes": 23174
+    },
+    {
+      "path": "asseats/new-products/photo-09-720.webp",
+      "reason": "Obsolete generated export of a removed product",
+      "bytes": 56066
+    },
+    {
+      "path": "asseats/new-products/photo-08-720.webp",
+      "reason": "Obsolete generated export of a removed product",
+      "bytes": 92800
+    },
+    {
+      "path": "asseats/new-products/photo-14-1086.webp",
+      "reason": "Obsolete generated export of a removed product",
+      "bytes": 118276
+    },
+    {
+      "path": "asseats/new-products/photo-03-720.webp",
+      "reason": "Obsolete generated export of a removed product",
+      "bytes": 58912
+    },
+    {
+      "path": "asseats/new-products/photo-02-720.webp",
+      "reason": "Obsolete generated export of a removed product",
+      "bytes": 51778
+    },
+    {
+      "path": "asseats/new-products/photo-12-1086.webp",
+      "reason": "Obsolete generated export of a removed product",
+      "bytes": 157310
+    },
+    {
+      "path": "asseats/new-products/photo-04-360.webp",
+      "reason": "Obsolete generated export of a removed product",
+      "bytes": 28496
+    },
+    {
+      "path": "asseats/new-products/photo-05-360.webp",
+      "reason": "Obsolete generated export of a removed product",
+      "bytes": 16732
+    },
+    {
+      "path": "asseats/new-products/photo-06-1086.webp",
+      "reason": "Obsolete generated export of a removed product",
+      "bytes": 161810
+    },
+    {
+      "path": "asseats/new-products/photo-14-720.webp",
+      "reason": "Obsolete generated export of a removed product",
+      "bytes": 63170
+    },
+    {
+      "path": "asseats/new-products/photo-15-720.webp",
+      "reason": "Obsolete generated export of a removed product",
+      "bytes": 76146
+    },
+    {
+      "path": "asseats/new-products/photo-03-360.webp",
+      "reason": "Obsolete generated export of a removed product",
+      "bytes": 20070
+    },
+    {
+      "path": "asseats/new-products/photo-02-360.webp",
+      "reason": "Obsolete generated export of a removed product",
+      "bytes": 17732
+    },
+    {
+      "path": "asseats/new-products/photo-01-1086.webp",
+      "reason": "Obsolete generated export of a removed product",
+      "bytes": 78030
+    },
+    {
+      "path": "asseats/new-products/photo-15-1086.webp",
+      "reason": "Obsolete generated export of a removed product",
+      "bytes": 147678
+    },
+    {
+      "path": "asseats/new-products/photo-09-360.webp",
+      "reason": "Obsolete generated export of a removed product",
+      "bytes": 17084
+    },
+    {
+      "path": "asseats/new-products/photo-08-360.webp",
+      "reason": "Obsolete generated export of a removed product",
+      "bytes": 24628
+    },
+    {
+      "path": "asseats/new-products/photo-13-720.webp",
+      "reason": "Obsolete generated export of a removed product",
+      "bytes": 80898
+    },
+    {
+      "path": "asseats/new-products/photo-12-720.webp",
+      "reason": "Obsolete generated export of a removed product",
+      "bytes": 83938
+    },
+    {
+      "path": "asseats/new-products/photo-14-360.webp",
+      "reason": "Obsolete generated export of a removed product",
+      "bytes": 18316
+    },
+    {
+      "path": "asseats/new-products/photo-15-360.webp",
+      "reason": "Obsolete generated export of a removed product",
+      "bytes": 20526
+    },
+    {
+      "path": "asseats/new-products/photo-07-1086.webp",
+      "reason": "Obsolete generated export of a removed product",
+      "bytes": 126614
+    },
+    {
+      "path": "asseats/new-products/photo-13-1086.webp",
+      "reason": "Obsolete generated export of a removed product",
+      "bytes": 159244
+    },
+    {
+      "path": "asseats/new-products/photo-04-720.webp",
+      "reason": "Obsolete generated export of a removed product",
+      "bytes": 85196
+    },
+    {
+      "path": "asseats/new-products/photo-05-720.webp",
+      "reason": "Obsolete generated export of a removed product",
+      "bytes": 54444
+    },
+    {
+      "path": "asseats/product-squares/mahogany-cable-1080.jpg",
+      "reason": "Unused square image variant",
+      "bytes": 135489
+    },
+    {
+      "path": "asseats/product-squares/mahogany-leaf-1080.jpg",
+      "reason": "Unused square image variant",
+      "bytes": 212983
+    },
+    {
+      "path": "asseats/mahogany-floor-lamp/top-360.webp",
+      "reason": "Superseded generated image or poster; active 1080px export retained",
+      "bytes": 16328
+    },
+    {
+      "path": "asseats/mahogany-floor-lamp/front-room-360.webp",
+      "reason": "Superseded generated image or poster; active 1080px export retained",
+      "bytes": 27124
+    },
+    {
+      "path": "asseats/mahogany-floor-lamp/working-720.webp",
+      "reason": "Superseded generated image or poster; active 1080px export retained",
+      "bytes": 35602
+    },
+    {
+      "path": "asseats/mahogany-floor-lamp/front-room-1086.webp",
+      "reason": "Superseded generated image or poster; active 1080px export retained",
+      "bytes": 176152
+    },
+    {
+      "path": "asseats/mahogany-floor-lamp/materials-720.webp",
+      "reason": "Superseded generated image or poster; active 1080px export retained",
+      "bytes": 58432
+    },
+    {
+      "path": "asseats/mahogany-floor-lamp/side-360.webp",
+      "reason": "Superseded generated image or poster; active 1080px export retained",
+      "bytes": 9180
+    },
+    {
+      "path": "asseats/mahogany-floor-lamp/front-360.webp",
+      "reason": "Superseded generated image or poster; active 1080px export retained",
+      "bytes": 9374
+    },
+    {
+      "path": "asseats/mahogany-floor-lamp/top-720.webp",
+      "reason": "Superseded generated image or poster; active 1080px export retained",
+      "bytes": 43366
+    },
+    {
+      "path": "asseats/mahogany-floor-lamp/side-1086.webp",
+      "reason": "Superseded generated image or poster; active 1080px export retained",
+      "bytes": 46298
+    },
+    {
+      "path": "asseats/mahogany-floor-lamp/working-360.webp",
+      "reason": "Superseded generated image or poster; active 1080px export retained",
+      "bytes": 11976
+    },
+    {
+      "path": "asseats/mahogany-floor-lamp/front-room-720.webp",
+      "reason": "Superseded generated image or poster; active 1080px export retained",
+      "bytes": 89204
+    },
+    {
+      "path": "asseats/mahogany-floor-lamp/front-room.png",
+      "reason": "Superseded generated image or poster; active 1080px export retained",
+      "bytes": 2024479
+    },
+    {
+      "path": "asseats/mahogany-floor-lamp/front-720.webp",
+      "reason": "Superseded generated image or poster; active 1080px export retained",
+      "bytes": 27030
+    },
+    {
+      "path": "asseats/mahogany-floor-lamp/side-720.webp",
+      "reason": "Superseded generated image or poster; active 1080px export retained",
+      "bytes": 25426
+    },
+    {
+      "path": "asseats/mahogany-floor-lamp/materials-360.webp",
+      "reason": "Superseded generated image or poster; active 1080px export retained",
+      "bytes": 17622
+    },
+    {
+      "path": "asseats/mahogany-floor-lamp/video-film.webp",
+      "reason": "Superseded generated image or poster; active 1080px export retained",
+      "bytes": 50848
+    },
+    {
+      "path": "asseats/mahogany-floor-lamp/leaf-720.webp",
+      "reason": "Superseded generated image or poster; active 1080px export retained",
+      "bytes": 65414
+    },
+    {
+      "path": "asseats/mahogany-floor-lamp/front-1086.webp",
+      "reason": "Superseded generated image or poster; active 1080px export retained",
+      "bytes": 50042
+    },
+    {
+      "path": "asseats/mahogany-floor-lamp/cable-720.webp",
+      "reason": "Superseded generated image or poster; active 1080px export retained",
+      "bytes": 18238
+    },
+    {
+      "path": "asseats/mahogany-floor-lamp/top-1086.webp",
+      "reason": "Superseded generated image or poster; active 1080px export retained",
+      "bytes": 96230
+    },
+    {
+      "path": "asseats/mahogany-floor-lamp/video-bulb.webp",
+      "reason": "Superseded generated image or poster; active 1080px export retained",
+      "bytes": 15042
+    },
+    {
+      "path": "asseats/mahogany-floor-lamp/materials-1086.webp",
+      "reason": "Superseded generated image or poster; active 1080px export retained",
+      "bytes": 108682
+    },
+    {
+      "path": "asseats/mahogany-floor-lamp/working-1086.webp",
+      "reason": "Superseded generated image or poster; active 1080px export retained",
+      "bytes": 76894
+    },
+    {
+      "path": "asseats/mahogany-floor-lamp/video-working.webp",
+      "reason": "Superseded generated image or poster; active 1080px export retained",
+      "bytes": 29080
+    },
+    {
+      "path": "asseats/mahogany-floor-lamp/working-room-square.png",
+      "reason": "Superseded generated image or poster; active 1080px export retained",
+      "bytes": 1756114
+    }
+  ],
+  "bytesRemoved": 8814646
+}

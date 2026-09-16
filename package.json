@@ -4,7 +4,9 @@
   "type": "module",
   "scripts": {
     "build": "node scripts/build.mjs",
-    "test": "node --test"
+    "test": "node --test",
+    "check": "node scripts/check.mjs",
+    "images:prepare": "swift scripts/prepare-product-images.swift"
   },
   "devDependencies": {
     "esbuild": "^0.28.2"

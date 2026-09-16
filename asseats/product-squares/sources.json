@@ -1,0 +1,97 @@
+[
+  {
+    "id": "mahogany-wooden-floor-lamp",
+    "source": "asseats/mahogany-floor-lamp/front-room-square.png",
+    "output": "asseats/product-squares/mahogany-wooden-floor-lamp-1080.jpg"
+  },
+  {
+    "id": "arc-line-floor-lamp",
+    "source": "asseats/737046296_122213207996860537_6242905900036558432_n.jpg",
+    "output": "asseats/product-squares/arc-line-floor-lamp-1080.jpg"
+  },
+  {
+    "id": "halo-wood-floor-lamp",
+    "source": "asseats/735128642_122212889018860537_2160910607779040054_n.jpg",
+    "output": "asseats/product-squares/halo-wood-floor-lamp-1080.jpg"
+  },
+  {
+    "id": "corner-glow-smart-lamp",
+    "source": "asseats/737758793_122213205494860537_228969185351526514_n.jpg",
+    "output": "asseats/product-squares/corner-glow-smart-lamp-1080.jpg"
+  },
+  {
+    "id": "readwell-gooseneck-lamp",
+    "source": "asseats/736689213_122212891238860537_7583314156601231015_n.jpg",
+    "output": "asseats/product-squares/readwell-gooseneck-lamp-1080.jpg"
+  },
+  {
+    "id": "fold-statement-lamp",
+    "source": "asseats/737799923_122212889186860537_3260884086558380508_n.jpg",
+    "output": "asseats/product-squares/fold-statement-lamp-1080.jpg"
+  },
+  {
+    "id": "linen-column-floor-lamp",
+    "source": "asseats/738416469_122212889066860537_8142852148466883771_n.jpg",
+    "output": "asseats/product-squares/linen-column-floor-lamp-1080.jpg"
+  },
+  {
+    "id": "orbit-table-lamp",
+    "source": "asseats/734783816_122212891154860537_895055113354639031_n.jpg",
+    "output": "asseats/product-squares/orbit-table-lamp-1080.jpg"
+  },
+  {
+    "id": "linea-pendant-light",
+    "source": "asseats/735993902_122212891358860537_4363195970911617746_n.jpg",
+    "output": "asseats/product-squares/linea-pendant-light-1080.jpg"
+  },
+  {
+    "id": "soft-curve-wall-light",
+    "source": "asseats/736921464_122212891028860537_6244703595858073197_n.jpg",
+    "output": "asseats/product-squares/soft-curve-wall-light-1080.jpg"
+  },
+  {
+    "id": "cloud-ceiling-light",
+    "source": "asseats/735858901_122212891322860537_5695129336991327583_n.jpg",
+    "output": "asseats/product-squares/cloud-ceiling-light-1080.jpg"
+  },
+  {
+    "id": "garden-glow-outdoor-light",
+    "source": "asseats/735415734_122212889354860537_8453352915285784402_n.jpg",
+    "output": "asseats/product-squares/garden-glow-outdoor-light-1080.jpg"
+  },
+  {
+    "id": "melt-glass-table-lamp",
+    "source": "asseats/745503670_122215520828860537_4771775924143394858_n.jpg",
+    "output": "asseats/product-squares/melt-glass-table-lamp-1080.jpg"
+  },
+  {
+    "id": "mahogany-materials",
+    "source": "asseats/mahogany-floor-lamp/materials-square.png",
+    "output": "asseats/product-squares/mahogany-materials-1080.jpg"
+  },
+  {
+    "id": "mahogany-top",
+    "source": "asseats/mahogany-floor-lamp/top-square.png",
+    "output": "asseats/product-squares/mahogany-top-1080.jpg"
+  },
+  {
+    "id": "mahogany-side",
+    "source": "asseats/mahogany-floor-lamp/side-square.png",
+    "output": "asseats/product-squares/mahogany-side-1080.jpg"
+  },
+  {
+    "id": "mahogany-working",
+    "source": "asseats/mahogany-floor-lamp/working-botanical-square.png",
+    "output": "asseats/product-squares/mahogany-working-1080.jpg"
+  },
+  {
+    "id": "mahogany-plug",
+    "source": "asseats/mahogany-floor-lamp/plug-720.webp",
+    "output": "asseats/product-squares/mahogany-plug-1080.jpg"
+  },
+  {
+    "id": "mahogany-shade",
+    "source": "asseats/mahogany-floor-lamp/shade-720.webp",
+    "output": "asseats/product-squares/mahogany-shade-1080.jpg"
+  }
+]
